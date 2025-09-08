@@ -55,7 +55,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html", // путь к файлу index.html
+      template: "./index.html", // путь к файлу index.html
       chunks: ["main"], // подключаем созданный main.js
     }),
     new HtmlWebpackInjector(),
