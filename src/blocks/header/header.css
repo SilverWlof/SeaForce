@@ -1,18 +1,18 @@
 .header{
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 96px;
-  width: 100%;
   position: fixed;
   /* background-color: #181d22; */
   opacity: 70%;  
   color: white;
+  /* padding: 0 12%; */
+  width: 100%;
+  justify-content: center;
 }
 
 .header img{
   height: 22px;
-  width: 285px; 
   padding-right: 24px;
 }
 
@@ -20,6 +20,7 @@
   color: white;
   height: 24px;
   text-decoration: none;
+  width: 285px; 
 }
 
 .menu{
