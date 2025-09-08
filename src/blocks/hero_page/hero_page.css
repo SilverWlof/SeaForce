@@ -1,0 +1,64 @@
+.hero_page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.hero_page_image {
+  background-image: url(../../images/Main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-left: 12%;
+  background-position: center;
+  align-content: center;
+}
+
+.hero_page_slogan{
+  font-size: 64px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: bold;
+  color: white;
+  height: 249px;
+  width: 519px;
+  padding-bottom: 35px;
+}
+
+.hero_page_run_text{
+  color: #1A1F24;
+  font-family: "Inter", "Arial", sans-serif;
+  text-transform: uppercase;
+  word-spacing: 48px;
+  letter-spacing: 3%;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.hero_marquee_box{
+  background-color: #FFED4C;  
+  height: 96px;
+  margin: 0;
+  align-content: center;
+
+}
+
+.hero_page_but{
+  height:66px ;
+  width: 180px;
+  border-radius: 4px;
+  color: #1A1F24;
+  background-color: #FFF8CF;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+.hero_page_but_catolog{
+  background-color: #FFED4C;
+  font-weight: bold;
+  margin-right: 24px;
+}
+.hero_page_but_catolog img{
+ padding-left: 8px;
+ height: 16px;
+ width: 16px;
+}

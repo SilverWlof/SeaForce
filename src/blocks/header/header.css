@@ -1,0 +1,41 @@
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96px;
+  width: 100%;
+  position: fixed;
+  /* background-color: #181d22; */
+  opacity: 70%;  
+  color: white;
+}
+
+.header img{
+  height: 22px;
+  width: 285px; 
+  padding-right: 24px;
+}
+
+.header a{
+  color: white;
+  height: 24px;
+  text-decoration: none;
+}
+
+.menu{
+  width: 588;
+  padding-left: 24px;
+}
+
+.menu a{
+  padding-left: 32px;
+}
+
+.link_change{
+
+}
+
+@keyframes link_underline{
+  from{opacity: 0;}
+  to{opacity: 100;}
+}

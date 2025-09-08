@@ -1,0 +1,23 @@
+.usp{
+    background: linear-gradient(to bottom,#181d22 ,#1A1F24,#181d22);
+    height: 1280px;
+    padding-top: 80px;
+}
+
+.usp_box{
+  display: flex;
+  justify-content: center;
+  background-image: url(../../images/About_UTP.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1116px;
+
+}
+
+.usp_text{
+  height: 156px;
+  width: 1200px;
+  color: white;
+  font-size: 40px;
+  padding-top: 917px;
+}
