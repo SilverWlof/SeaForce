@@ -51,7 +51,7 @@
 }
 
 .hero_page_image {
-  background-image: url(048d59efb4aefdb47a52.png);
+  background-image: url(8bea4726ed950bd0a142.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -112,7 +112,7 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/about.css ***!
   \*******************************************************************************************************************************************************/
 .about{
-  background-image: url(ee7304b2fad21e8dc452.png);
+  background-image: url(797c4216f4718b00846c.jpg);
   height: 832px;
   background-repeat: no-repeat;
   background-size:cover;
@@ -202,7 +202,7 @@
   flex-direction: column;
   justify-content: center;
   height: 927px;
-  background-image: url(cde8e16a31bf6be381f1.png);background-repeat: no-repeat;
+  background-image: url(d924fd52d834c05ef1eb.jpg);background-repeat: no-repeat;
   background-size: cover;
 }
 .values_text_box{
@@ -238,7 +238,7 @@ margin-left: 24px;
 .usp_box{
   display: flex;
   justify-content: center;
-  background-image: url(8d7fc69875958ca7ddf9.png);
+  background-image: url(8c7c4c112f611d49775c.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 1116px;
@@ -257,7 +257,7 @@ margin-left: 24px;
   \**********************************************************************************************************************************************************/
 .contacts{
   height: 736px;
-  background-image: url(c4f48087b66c60a98768.png);
+  background-image: url(4b6884cfe6202ecebc9e.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
