@@ -17,4 +17,19 @@ import "./marquee";
   });
 
   textElements.forEach(el => observer.observe(el));
-})();
+}
+
+// function(){
+//   const header = document.querySelector('.header');
+//   header.classList.remove('header_main');
+//   const observer = new IntersectionObserver(entries =>{
+//     if(entries.isIntersecting){
+//       entries.classList.remove('header_main');
+//     }
+//     else{
+//       entries.classList.add('header_main')
+//     }
+//   });
+//   header(el => header.observe(el))
+// }
+)();

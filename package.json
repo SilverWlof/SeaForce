@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && webpack",
+    "dev": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -b gh-pages"
+  },
   "devDependencies": {
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",
@@ -80,13 +87,6 @@
     "webpack-dev-server": "^5.2.2",
     "webpack-sources": "^3.3.3",
     "yallist": "^3.1.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && webpack",
-    "dev": "webpack serve",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -b gh-pages"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,461 @@
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/normalize.css ***!
+  \**************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+
+/*!**********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/fonts.css ***!
+  \**********************************************************************************************************************************************/
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');  */
+
+
+/* @font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Black.woff2") format("woff2"),
+    url("../fonts/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+} */
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/page/page.css ***!
+  \**************************************************************************************************************************************************/
+.page{
+  /* width: 1440px; */
+}
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/hero_page/hero_page.css ***!
+  \************************************************************************************************************************************************************/
+.hero_page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.hero_page_image {
+  background-image: url(048d59efb4aefdb47a52.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-left: 12%;
+  background-position: center;
+  align-content: center;
+}
+
+.hero_page_slogan{
+  font-size: 64px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: bold;
+  color: white;
+  height: 249px;
+  width: 519px;
+  padding-bottom: 35px;
+}
+
+.hero_page_run_text{
+  color: #1A1F24;
+  font-family: "Inter", "Arial", sans-serif;
+  text-transform: uppercase;
+  word-spacing: 48px;
+  letter-spacing: 3%;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.hero_marquee_box{
+  background-color: #FFED4C;  
+  height: 96px;
+  margin: 0;
+  align-content: center;
+
+}
+
+.hero_page_but{
+  height:66px ;
+  width: 180px;
+  border-radius: 4px;
+  color: #1A1F24;
+  background-color: #FFF8CF;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+.hero_page_but_catolog{
+  background-color: #FFED4C;
+  font-weight: bold;
+  margin-right: 24px;
+}
+.hero_page_but_catolog img{
+ padding-left: 8px;
+ height: 16px;
+ width: 16px;
+}
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/about.css ***!
+  \*******************************************************************************************************************************************************/
+.about{
+  background-image: url(ee7304b2fad21e8dc452.png);
+  height: 832px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-left: 120px;
+  padding-top: 128px;
+  background-color: #1A1F24;
+    display: flex;
+  flex-direction: column;
+}
+
+
+
+.about_text{
+  color: white;
+  font-size: 28px;
+}
+
+.about_text:nth-child(2){
+  padding-bottom: 500px;
+}
+
+.about_text_head{
+  font-size: 64px;
+  padding-bottom: 32px;
+}
+
+
+.text_anim{
+  animation: transpend_text 5s;
+}
+
+@keyframes transpend_text{
+  from{opacity: 0;}
+  to{opacity: 100;}
+}
+
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/mission.css ***!
+  \*********************************************************************************************************************************************************/
+.mission{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background:linear-gradient(to top, #181d22 , #131617);
+  height: 579px;
+  /* padding-left: 120px; */
+  
+}
+
+.mission_box{
+  width: 1200px;
+  padding-top: 96px;
+}
+
+.mission_head_text{
+  font-size: 40px;
+  padding-bottom: 16px;
+}
+
+.mission_text{
+  font-size: 24px;
+  max-width: 800px;
+}
+
+.mission_text_list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  max-width: 100%;
+  margin-left: 24px;
+}
+
+.mission_line{
+  margin: 32px 0;
+  background-color: white;
+  color: white;
+  width: 1200px;
+  height: 1px;
+  border: none;
+}
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/values/values.css ***!
+  \******************************************************************************************************************************************************/
+.values{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 927px;
+  background-image: url(cde8e16a31bf6be381f1.png);background-repeat: no-repeat;
+  background-size: cover;
+}
+.values_text_box{
+  color: white;
+  width: 500px;
+  height: 235px;
+  padding-left: 50%;
+}
+.values_text_box:nth-child(2)
+{
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.values_text{
+font-size: 24px ;
+margin-left: 24px;
+}
+
+.values_text_head{
+  font-size: 28px;
+  padding-bottom: 12px;
+}
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/usp/usp.css ***!
+  \************************************************************************************************************************************************/
+.usp{
+    background: linear-gradient(to bottom,#181d22 ,#1A1F24,#181d22);
+    height: 1280px;
+    padding-top: 80px;
+}
+
+.usp_box{
+  display: flex;
+  justify-content: center;
+  background-image: url(8d7fc69875958ca7ddf9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1116px;
+
+}
+
+.usp_text{
+  height: 156px;
+  width: 1200px;
+  color: white;
+  font-size: 40px;
+  padding-top: 917px;
+}
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/contacts/contacts.css ***!
+  \**********************************************************************************************************************************************************/
+.contacts{
+  height: 736px;
+  background-image: url(c4f48087b66c60a98768.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background-color: #181D22;
+}
+
+.contacts_box{
+  display: flex;
+  flex-direction: row;
+  padding-top: 32px;
+  gap: 116px;
+}
+
+.contacts_text{
+  color: white;
+  padding-top: 64px;
+  padding-left: 48pnx;
+  font-size: 40px;
+  font-weight: bold;
+  width:784px ;
+}
+
+.contacts_text__list{
+  font-size: 24px;
+  list-style: none;
+  font-weight: 100;
+}
+
+.contacts_text__list:first-child{
+  font-size: 18px;
+}
+.contacts_text__list:nth-child(3){
+  padding: 24px 0;
+}
+
+.contacts_text__list a{
+  text-decoration: underline;
+  color: #ffed4c;
+}
+
+.contacts_map{
+  width:832px ;
+  height: 416px;
+  background-color: grey;
+  margin-top: 63px;
+  justify-self: right;
+}
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/footer/footer.css ***!
+  \******************************************************************************************************************************************************/
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 375px;
+  background:linear-gradient(to top,#323C45,#262A2D);
+  color: white;
+  font-size: 18px;
+  
+}
+
+.footer_box{
+  display: flex;
+  flex-direction: row;
+  padding: 64px 120px;
+  justify-content: space-between;
+}
+
+.footer_adress{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 792px;
+  height: 210px;
+}
+
+.footer_adress img{
+  width:180px;
+  padding-bottom: 18px;
+}
+
+.footer_adress p{
+  padding-bottom: 14px;
+}
+
+.footer_adress p:nth-child(5){
+  padding-bottom: 18px;
+}
+
+.footer_nav{
+  width: 115px;
+  padding-right: 116px;
+  list-style: none;
+}
+.footer_nav li:first-child{
+  padding-bottom: 18px;
+  font-weight:bold ;
+  text-transform: uppercase;
+}
+.footer_nav a{
+ list-style: none;
+ text-decoration: none;
+ color: white;
+ height: 23px;
+}
+
+.footer_social a{
+  padding-right: 16px;
+  height: 36px;
+  width: 36px;
+  text-decoration: none;
+}
+
+.credit{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8%;
+  align-items: center;
+  height: 42px;
+  background-color: #1A1F24;
+  font-size: 12px;
+  opacity: 65%;
+  color: white;
+  text-decoration: none;
+}
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/header/header.css ***!
+  \******************************************************************************************************************************************************/
+.header{
+  display: flex;
+  align-items: center;
+  height: 96px;
+  position: fixed;
+  color: white;
+  width: 100%;
+  justify-content: center;
+  /* padding: 0 12%; */
+  /* background-color: #181d22; */
+  /* opacity: 70%;   */
+}
+
+.header_main{
+    /* background-color: #181d22; */
+}
+
+.header img{
+  height: 22px;
+  padding-right: 24px;
+}
+
+.header a{
+  color: white;
+  height: 24px;
+  text-decoration: none;
+  width: 285px; 
+}
+
+.menu{
+  width: 588;
+  padding-left: 24px;
+}
+
+.menu a{
+  padding-left: 32px;
+}
+
+.link_change{
+
+}
+
+@keyframes link_underline{
+  from{opacity: 0;}
+  to{opacity: 100;}
+}
+
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/hero_page/marquee.css ***!
+  \**********************************************************************************************************************************************************/
+.marquee-wrapper {
+  /* overflow: hidden; */
+  /* position: relative; */
+}
+
+.marquee-wrapper:after {
+  /* position: absolute; */
+  content: ' ';
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.marquee {
+  white-space: nowrap;
+}
+/*!*********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/pages/index.css ***!
+  \*********************************************************************************************************************************************/
+
