@@ -11,7 +11,7 @@
   height: 100%;
   padding-left: 12%;
   background-position: center;
-  align-content: center;
+  padding-top: 13.34%;
 }
 
 .hero_page_slogan{
@@ -25,13 +25,15 @@
 }
 
 .hero_page_run_text{
+  font-style: italic;
   color: #1A1F24;
-  font-family: "Inter", "Arial", sans-serif;
   text-transform: uppercase;
   word-spacing: 48px;
   letter-spacing: 3%;
   font-weight: 300;
   font-size: 32px;
+  white-space: nowrap;
+  display: flex;
 }
 
 .hero_marquee_box{
@@ -39,7 +41,6 @@
   height: 96px;
   margin: 0;
   align-content: center;
-
 }
 
 .hero_page_but{
@@ -48,7 +49,6 @@
   border-radius: 4px;
   color: #1A1F24;
   background-color: #FFF8CF;
-  font-family: "Inter", "Arial", sans-serif;
   font-size: 18px;
 }
 

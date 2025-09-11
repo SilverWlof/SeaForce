@@ -5,14 +5,13 @@
   height: 375px;
   background:linear-gradient(to top,#323C45,#262A2D);
   color: white;
-  font-size: 18px;
-  
+  font-size: 18px; 
 }
 
 .footer_box{
   display: flex;
   flex-direction: row;
-  padding: 64px 120px;
+  padding: 64px 12%;
   justify-content: space-between;
 }
 
@@ -65,7 +64,7 @@
 .credit{
   display: flex;
   justify-content: space-between;
-  padding: 0 8%;
+  padding: 0 12%;
   align-items: center;
   height: 42px;
   background-color: #1A1F24;

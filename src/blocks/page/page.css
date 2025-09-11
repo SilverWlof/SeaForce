@@ -1,3 +1,26 @@
 .page{
-  /* width: 1440px; */
+    font-family: "Inter", "Arial", sans-serif;
+}
+
+#map{
+
+}
+
+.text_animation{
+    /* opacity: 0; */
+}
+
+.text_animation_start{
+  animation: transpend_text 1s;
+}
+
+@keyframes transpend_text{
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

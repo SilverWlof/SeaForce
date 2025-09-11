@@ -1,23 +1,46 @@
-var wrapper = document.querySelector('.marquee-wrapper'),
-    marquee = document.querySelector('.marquee'),   
-    wrapperWidth = wrapper.offsetWidth,
-    marqueeWidth = marquee.scrollWidth;
-  
-    
-function move() {
-  var currentTX = getComputedStyle(marquee).transform.split(',');
-  if( currentTX[4] === undefined ) {
-    currentTX = -1;
-  } else {
-    currentTX = parseFloat(currentTX[4]) - 1;
-  }
-  
-  if(-currentTX >= marqueeWidth) {
-    marquee.style.transform = 'translateX(' + wrapperWidth + 'px)';
-  
-  } else {
-    marquee.style.transform = 'translateX(' + currentTX + 'px)';
-  }
-}
+<div id="marquee-container">
+  <div id="marquee-wrapper"></div>
+</div>
 
-var interval = setInterval(move, 10);
+<style>
+  #marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: #eee;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  #marquee-wrapper {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 10s linear infinite;
+  }
+
+  .marquee-text {
+    padding-right: 50px;
+    white-space: nowrap;
+    font-size: 1.2em;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+
+<script>
+  const text = "Это бесконечная бегущая строка на JavaScript! ";
+  const wrapper = document.getElementById('marquee-wrapper');
+
+  for (let i = 0; i < 2; i++) {
+    const span = document.createElement('div');
+    span.className = 'marquee-text';
+    span.textContent = text;
+    wrapper.appendChild(span);
+  }
+</script>

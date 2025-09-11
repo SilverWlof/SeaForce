@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>SEAFORCE</title>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=225d136c-2999-413b-b67b-18c0ca175f03&lang=ru_RU" type="text/javascript"></script>
+
 </head>
 <body class="body">
   <div class="page">
 
-    <header class="header header_main"> 
-      <a href="#hero"> <img src="./images/SEAFORCE.svg"></a>
+    <header class="header header_background"> 
+      <a href="#hero" class="header_logo"> <img src="./images/SEAFORCE.svg"></a>
       <a href="tel:+79217930398">+7 (921) 793-03-98</a>
       <nav class="menu">
         <a href="#about_us">О нас</a>
@@ -28,31 +31,36 @@
           <button class= "hero_page_but hero_page_but_catolog">Каталог <img src="./images/ArrowRight.png" alt=""></button>
           <button class="hero_page_but hero_page_but_project">Проекты</button>
         </div>
-        <div class="hero_marquee_box marquee-wrapper">
-          <p class="hero_page_run_text marquee">проектирование изготовление внедрение сервис проектирование изготовление внедрение сервис проектирование изготовление внедрение сервис проектирование изготовление внедрение сервис проектирование изготовление внедрение сервис проектирование изготовление внедрение <span class="end_marque">сервис</span></p>
+
+        <div class="hero_marquee_box marquee_conteiner">
+          <div class="hero_page_run_text marquee_wrapper">
+            <p class="marquee_text">проектирование изготовление внедрение сервис&nbsp;</p>
+            <p class="marquee_text">проектирование изготовление внедрение сервис&nbsp;</p>
+            <p class="marquee_text">проектирование изготовление внедрение сервис&nbsp;</p>
+            <p class="marquee_text">проектирование изготовление внедрение сервис&nbsp;</p>
+          </div>
         </div>
+
       </div>
 
       <div class="abiut_as">
         <a name="about_us"></a>
         <div class="about">
-          <h2 class="about_text about_text_head text_anim">О нас</h2>
-            <p class="about_text text_anim">АО «Сифорс» — российская инжиниринговая компания с собственным производством. </p>
-            <p class="about_text text_anim">Мы создаём надёжное палубное оборудование и металлоконструкции, автоматизируем промышленные процессы и модернизируем производство под ключ.  </p>
+          <h2 class="about_text about_text_head text_animation text_animation_start">О нас</h2>
+            <p class="about_text text_animation text_animation_start">АО «Сифорс» — российская инжиниринговая компания с собственным производством. </p>
+            <p class="about_text text_animation text_animation_start">Мы создаём надёжное палубное оборудование и металлоконструкции, автоматизируем промышленные процессы и модернизируем производство под ключ.  </p>
         </div>
         <div class="mission">
           <div class="mission_box">
             <h3 class="mission_head_text">Наша миссия</h3>
-            <p class="mission_text">Повышаем эффективность промышленности с помощью инженерной экспертизы, современного оборудования и полного сопровождения проектов — от идеи до внедрения.</p>
+            <p class="mission_text">Повышаем эффективность промышленности с помощью инженерной<br> экспертизы, современного оборудования и полного сопровождения<br> проектов — от идеи до внедрения.</p>
             <hr class="mission_line">
             <h3 class="mission_head_text">Сифорс помогает:</h3>
 
-            <ul class="mission_text mission_text_list"><!--class="mission_text mission_text_list"-->
-
-              <li >Снизить <br>зависимость от импорта</li><!--class="mission_text_list"-->
+            <ul class="mission_text mission_text_list">
+              <li >Снизить <br>зависимость от импорта</li>
               <li >Повысить надёжность<br> и управляемость процессов</li>
               <li >Ускорить запуск<br> новых производств</li>
-
             </ul>
             
           </div>
@@ -62,7 +70,7 @@
           <div class="values_text_box">
             <h3 class="values_text_head">Наши ценности</h3>
             <ul>
-              <li class="values_text" class="values_text">Качество — без компромиссов</li>
+              <li class="values_text">Качество — без компромиссов</li>
               <li class="values_text">Ответственность за результат</li>
               <li class="values_text">Инженерная честность</li>
               <li class="values_text">Технологичность и инновации</li>
@@ -93,7 +101,7 @@
 
         <div class="usp">
           <div class="usp_box">
-            <h3 class="usp_text">Сифорс — это и производитель, и инженерный партнёр. Мы не просто поставляем оборудование — мы берём на себя ответственность за результат.</h3>
+            <p class="usp_text text_animation text_animation_start">Сифорс — это и производитель, и инженерный партнёр. Мы не просто поставляем оборудование — мы берём на себя ответственность за результат.</p>
           </div>
         </div>
 
@@ -103,22 +111,20 @@
             <h2>Контакты</h2>
             <div class="contacts_box">
               <ul>
-                <li class="contacts_text__list">ОТДЕЛ ПРОДАЖ:</li>
+                <li class="contacts_text__list">ОТДЕЛ ПРОДАЖ</li>
                 <li class="contacts_text__list">office@ao-seaforce.ru</li>
                 <li class="contacts_text__list">+7 (921) 793-03-98</li>
                 <li class="contacts_text__list"><a href="tel:+79217930398">Заказать звонок</a></li>
               </ul>
               <ul >
-                <li class="contacts_text__list">НАШ ОФИС:</li>
+                <li class="contacts_text__list">НАШ ОФИС</li>
                 <li class="contacts_text__list">г. Санкт-Петербург</li>
                 <li class="contacts_text__list">ул. Дудко, д. 8</li>
                 <li class="contacts_text__list">пн–пт, с 7:00 до 17:00</li>
               </ul>
             </div>
           </div>
-          <div class="contacts_map">
-
-          </div>
+          <div class="contacts_map" id="map"></div>
         </div>
 
       </div>
@@ -162,5 +168,19 @@
 
     </footer>
   </div>
+    <script>
+      ymaps.ready(function () {
+        var myMap = new ymaps.Map("map", {
+          center: [59.886058, 30.433916], // 
+          zoom: 17
+        });
+        
+        var myPlacemark = new ymaps.Placemark([59.886058, 30.433916], {
+          balloonContent: 'SeaForce'
+        });
+        
+        myMap.geoObjects.add(myPlacemark);
+      });
+      </script>
 </body>
 </html>

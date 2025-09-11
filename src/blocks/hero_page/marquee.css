@@ -1,16 +1,22 @@
-.marquee-wrapper {
-  /* overflow: hidden; */
-  /* position: relative; */
-}
-
-.marquee-wrapper:after {
-  /* position: absolute; */
-  content: ' ';
-  right: 0;
-  top: 0;
-  height: 100%;
-}
-
-.marquee {
+.marquee_conteiner {
+  width: 100%;
+  overflow: hidden;
   white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee_wrapper{
+  display: flex;
+  width: max-content;
+  animation: move 10s linear infinite;
+}
+
+.marquee_text {
+  white-space: nowrap;
+  font-size: 1.2e
+}
+
+@keyframes move{
+  0%{transform: translateX(0%);}
+  100%{transform: translateX(-20%);}
 }

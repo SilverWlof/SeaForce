@@ -1,35 +1,41 @@
 import "../pages/index.css";
 
-import "./marquee";
+// import "./marquee";
 
-(function () {
-  const textElements = document.querySelectorAll('.about_text');
-  textElements.forEach(el => el.classList.remove('text_anim'));
+(()=>{
+  const textElements = document.querySelectorAll('.text_animation');
+  textElements.forEach(el => el.classList.remove('text_animation_start'));
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('text_anim');
+        entry.target.classList.add('text_animation_start');
       } else {
-        entry.target.classList.remove('text_anim');
+        entry.target.classList.remove('text_animation_start');
       }
     });
   });
 
   textElements.forEach(el => observer.observe(el));
-}
+})(),
 
-// function(){
-//   const header = document.querySelector('.header');
-//   header.classList.remove('header_main');
-//   const observer = new IntersectionObserver(entries =>{
-//     if(entries.isIntersecting){
-//       entries.classList.remove('header_main');
-//     }
-//     else{
-//       entries.classList.add('header_main')
-//     }
-//   });
-//   header(el => header.observe(el))
-// }
-)();
+(()=>{
+  const header = document.querySelector('.header');
+  const break_point = document.querySelector('.hero_page_but');
+
+  header.classList.remove('header_background');
+
+  const observer_revers = new IntersectionObserver(entries =>{
+    entries.forEach(entry =>{
+      if(entry.isIntersecting){
+        header.classList.remove('header_background');
+      }
+      else{
+        header.classList.add('header_background')
+      }
+    })
+
+  });
+  observer_revers.observe(break_point)
+}
+)()

@@ -3,14 +3,11 @@
   height: 832px;
   background-repeat: no-repeat;
   background-size:cover;
-  padding-left: 120px;
-  padding-top: 128px;
+  padding: 128px 12% 88px 12%;
   background-color: #1A1F24;
-    display: flex;
+  display: flex;
   flex-direction: column;
 }
-
-
 
 .about_text{
   color: white;
@@ -24,14 +21,4 @@
 .about_text_head{
   font-size: 64px;
   padding-bottom: 32px;
-}
-
-
-.text_anim{
-  animation: transpend_text 5s;
-}
-
-@keyframes transpend_text{
-  from{opacity: 0;}
-  to{opacity: 100;}
 }
