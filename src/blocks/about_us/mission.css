@@ -13,12 +13,13 @@
 }
 
 .mission_head_text{
-  font-size: 40px;
+  font-size: 28px;
   padding-bottom: 16px;
 }
 
 .mission_head_text:first-child{
    color: #FFED4C;
+   font-size: 40px;
 }
 
 .mission_text{
