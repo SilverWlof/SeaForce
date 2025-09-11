@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: end;
-  background-color: #181D22;
+  background-color: #191F24;
 }
 
 .contacts_box{
@@ -40,10 +40,12 @@
 
 .contacts_text__list:first-child{
   font-weight: bold;
-  padding-bottom: 24px;
+}
+
+.contacts_text__list:nth-child(2){
+padding: 24px 0;
 }
 .contacts_text__list:nth-child(3){
-  padding-bottom: 24px;
   font-weight: bold;
 }
 
