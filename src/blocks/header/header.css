@@ -1,14 +1,17 @@
 .header{
-  display: flex;
-  align-items: center;
   height: 96px;
+  align-content: center;
   position: fixed;
   color: white;
-  width: 76%;
-  padding: 0 12%;
+  width: 100%;
   font-size: 28px;
   font-weight: 600;
+
+}
+.header div{
+  display: flex;
   justify-content: space-between;
+  padding: 0 8%;
 }
 
 .header_background{
@@ -23,25 +26,29 @@
   width: 190px;
 }
 
-.header a{
-  color: white;
-  text-decoration: none;
-}
-
 .menu{
   font-size: 24px;
   font-weight: normal;
+  text-decoration: none;
 }
 
 .menu a{
   padding-left: 24px;
 }
 
-.link_change{
-
+.link{
+  color: white;
+  text-decoration: none;
 }
+
+.link.active{
+  font-weight: bold;
+  text-decoration: underline #FFED4C 3px; 
+}
+
 
 @keyframes link_underline{
-  from{opacity: 0;}
-  to{opacity: 100;}
+  to{text-decoration: underline #FFED4C 3px; }
 }
+
+

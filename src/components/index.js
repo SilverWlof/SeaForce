@@ -9,13 +9,15 @@ import "../pages/index.css";
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        const delay = entry.target.dataset.delay || "0s";
+        entry.target.style.transitionDelay = delay;
         entry.target.classList.add('text_animation_start');
       } else {
         entry.target.classList.remove('text_animation_start');
+        entry.target.style.transitionDelay = "0s";
       }
     });
   });
-
   textElements.forEach(el => observer.observe(el));
 })(),
 
@@ -37,5 +39,36 @@ import "../pages/index.css";
 
   });
   observer_revers.observe(break_point)
+}
+)(),
+
+(()=>{
+  document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".break_point");
+  const navLinks = document.querySelectorAll(".menu .link");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+
+          navLinks.forEach((link) => link.classList.remove("active"));
+
+          const activeLink = document.querySelector(
+            `.menu .link[href="#${entry.target.getAttribute("name")}"]`
+          );
+          if (activeLink) {
+            activeLink.classList.add("active");
+          }
+        }
+      });
+    },
+    {
+      threshold: 0.9, 
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+}); 
 }
 )()
