@@ -1,45 +1,53 @@
+/*!**********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/fonts.css ***!
+  \**********************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 /*!**************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/normalize.css ***!
   \**************************************************************************************************************************************************/
 * {
   margin: 0;
   padding: 0;
-  font-family: "Inter", "Arial", sans-serif;
 }
 
 
-/*!**********************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/fonts.css ***!
-  \**********************************************************************************************************************************************/
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');  */
 
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/fonts.css (1) ***!
+  \**************************************************************************************************************************************************/
+ 
 
-/* @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
-    url("../fonts/Inter-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Medium.woff2") format("woff2"),
-    url("../fonts/Inter-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Black.woff2") format("woff2"),
-    url("../fonts/Inter-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-} */
 /*!**************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/page/page.css ***!
   \**************************************************************************************************************************************************/
 .page{
-  /* width: 1440px; */
+    font-family: "Inter", "Arial", sans-serif;
+    font-size: 24px;
+}
+
+.text_animation{
+    /* opacity: 0; */
+}
+
+.text_animation_start{
+  animation: transpend_text 1s;
+}
+
+@keyframes transpend_text{
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 430px ){
+  .page{
+    font-size: 14px;
+  }
 }
 /*!************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/hero_page/hero_page.css ***!
@@ -55,14 +63,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  padding-left: 12%;
+  padding-left: 8%;
   background-position: center;
-  align-content: center;
+  padding-top: 13.34%;
 }
 
 .hero_page_slogan{
   font-size: 64px;
-  font-family: "Inter", "Arial", sans-serif;
   font-weight: bold;
   color: white;
   height: 249px;
@@ -71,21 +78,21 @@
 }
 
 .hero_page_run_text{
+  font-style: italic;
   color: #1A1F24;
-  font-family: "Inter", "Arial", sans-serif;
   text-transform: uppercase;
   word-spacing: 48px;
   letter-spacing: 3%;
   font-weight: 300;
   font-size: 32px;
+  white-space: nowrap;
+  display: flex;
 }
 
 .hero_marquee_box{
   background-color: #FFED4C;  
   height: 96px;
-  margin: 0;
   align-content: center;
-
 }
 
 .hero_page_but{
@@ -94,7 +101,6 @@
   border-radius: 4px;
   color: #1A1F24;
   background-color: #FFF8CF;
-  font-family: "Inter", "Arial", sans-serif;
   font-size: 18px;
 }
 
@@ -116,14 +122,11 @@
   height: 832px;
   background-repeat: no-repeat;
   background-size:cover;
-  padding-left: 120px;
-  padding-top: 128px;
+  padding: 128px 8% 88px 8%;
   background-color: #1A1F24;
-    display: flex;
+  display: flex;
   flex-direction: column;
 }
-
-
 
 .about_text{
   color: white;
@@ -139,58 +142,52 @@
   padding-bottom: 32px;
 }
 
-
-.text_anim{
-  animation: transpend_text 5s;
-}
-
-@keyframes transpend_text{
-  from{opacity: 0;}
-  to{opacity: 100;}
-}
-
 /*!*********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/mission.css ***!
   \*********************************************************************************************************************************************************/
+.m_mission_box{
+  display: none;
+}
+
 .mission{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   color: white;
-  background:linear-gradient(to top, #181d22 , #131617);
-  height: 579px;
-  /* padding-left: 120px; */
-  
+  background: linear-gradient(to top, #191f24 , #14171a);
+  height: 643px;  
+  padding: 0 8%;
 }
 
 .mission_box{
-  width: 1200px;
-  padding-top: 96px;
+  padding-top: 8.8%;
+  padding-bottom: 128px;
+  width: 100%;
 }
 
 .mission_head_text{
-  font-size: 40px;
+  font-size: 28px;
   padding-bottom: 16px;
+}
+
+.mission_head_text:first-child{
+   color: #FFED4C;
+   font-size: 40px;
 }
 
 .mission_text{
   font-size: 24px;
-  max-width: 800px;
 }
 
 .mission_text_list{
   display: flex;
   flex-direction: row;
   justify-content: space-between;  
-  max-width: 100%;
   margin-left: 24px;
 }
 
 .mission_line{
-  margin: 32px 0;
+  margin: 60px 0;
   background-color: white;
   color: white;
-  width: 1200px;
   height: 1px;
   border: none;
 }
@@ -204,17 +201,13 @@
   height: 927px;
   background-image: url(d924fd52d834c05ef1eb.jpg);background-repeat: no-repeat;
   background-size: cover;
+  gap: 32px;
 }
 .values_text_box{
   color: white;
-  width: 500px;
+  width: 588px;
   height: 235px;
   padding-left: 50%;
-}
-.values_text_box:nth-child(2)
-{
-  padding-bottom: 32px;
-  padding-top: 32px;
 }
 
 .values_text{
@@ -226,11 +219,14 @@ margin-left: 24px;
   font-size: 28px;
   padding-bottom: 12px;
 }
+.m_values_map{
+  display: none;
+}
 /*!************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/usp/usp.css ***!
   \************************************************************************************************************************************************/
 .usp{
-    background: linear-gradient(to bottom,#181d22 ,#1A1F24,#181d22);
+    background-color: #191f24;
     height: 1280px;
     padding-top: 80px;
 }
@@ -238,19 +234,24 @@ margin-left: 24px;
 .usp_box{
   display: flex;
   justify-content: center;
+  align-items: end;
   background-image: url(8c7c4c112f611d49775c.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 1116px;
+  padding: 0 8%;
+
 
 }
 
 .usp_text{
   height: 156px;
-  width: 1200px;
   color: white;
   font-size: 40px;
-  padding-top: 917px;
+  padding-bottom: 128px;
+}
+.m_usp_map{
+  display: none;
 }
 /*!**********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/contacts/contacts.css ***!
@@ -263,49 +264,62 @@ margin-left: 24px;
   display: flex;
   flex-direction: column;
   align-items: end;
-  background-color: #181D22;
+  background-color: #191F24;
 }
 
 .contacts_box{
   display: flex;
   flex-direction: row;
   padding-top: 32px;
-  gap: 116px;
+  gap: 24px;
+}
+
+.contacts_box ul{
+  width: 360px;
 }
 
 .contacts_text{
   color: white;
   padding-top: 64px;
-  padding-left: 48pnx;
   font-size: 40px;
   font-weight: bold;
-  width:784px ;
+  width: 48%;
+  padding-right: 6.7%;
 }
 
-.contacts_text__list{
+.contacts_text_list{
   font-size: 24px;
   list-style: none;
-  font-weight: 100;
+  font-weight: normal;
 }
 
-.contacts_text__list:first-child{
-  font-size: 18px;
-}
-.contacts_text__list:nth-child(3){
-  padding: 24px 0;
+.contacts_text_list a{
+  color: inherit;
+  text-decoration: inherit;
 }
 
-.contacts_text__list a{
+.contacts_text_list:first-child{
+  font-weight: bold;
+}
+
+.contacts_text_list:nth-child(2){
+padding: 24px 0;
+}
+.contacts_text_list:nth-child(3){
+  font-weight: bold;
+}
+
+.contacts_text_list_zvonok {
   text-decoration: underline;
   color: #ffed4c;
 }
 
 .contacts_map{
-  width:832px ;
-  height: 416px;
+  width:58% ;
+  height: 530px;
   background-color: grey;
-  margin-top: 63px;
-  justify-self: right;
+  margin-top: 52px;
+  padding: 0;
 }
 /*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/footer/footer.css ***!
@@ -313,33 +327,52 @@ margin-left: 24px;
 .footer{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 375px;
   background:linear-gradient(to top,#323C45,#262A2D);
   color: white;
-  font-size: 18px;
-  
+  font-size: 18px; 
 }
 
 .footer_box{
   display: flex;
   flex-direction: row;
-  padding: 64px 120px;
-  justify-content: space-between;
+  padding: 64px 8%;
+}
+
+.footer_social{
+  height: 184px;
+  width: 32%;
+  padding-right: 2%;
+}
+.footer_social_logo{
+  height: 21px;
+  width: 180px;
+  padding-bottom: 16px;
+}
+
+.footer_social_contacts{
+  padding-bottom: 16px;
+}
+.footer_social_contacts p:first-child {
+  padding-bottom: 15px;
+  text-decoration: underline;
+}
+
+.footer_social_icon{
+  padding-right: 16px;
+  height: 36px;
+  width: 36px;
+  text-decoration: none;
+}
+.footer_social_icon:first-child{
+  padding-right: 16px;
 }
 
 .footer_adress{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   list-style: none;
-  width: 792px;
+  width: 32%;
   height: 210px;
-}
-
-.footer_adress img{
-  width:180px;
-  padding-bottom: 18px;
+  padding-right: 2%;
 }
 
 .footer_adress p{
@@ -352,8 +385,8 @@ margin-left: 24px;
 
 .footer_nav{
   width: 115px;
-  padding-right: 116px;
   list-style: none;
+  width: 32%;
 }
 .footer_nav li:first-child{
   padding-bottom: 18px;
@@ -364,14 +397,6 @@ margin-left: 24px;
  list-style: none;
  text-decoration: none;
  color: white;
- height: 23px;
-}
-
-.footer_social a{
-  padding-right: 16px;
-  height: 36px;
-  width: 36px;
-  text-decoration: none;
 }
 
 .credit{
@@ -389,73 +414,590 @@ margin-left: 24px;
 /*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/header/header.css ***!
   \******************************************************************************************************************************************************/
+.m_header{
+  display: none;
+}
 .header{
-  display: flex;
-  align-items: center;
   height: 96px;
+  align-content: center;
   position: fixed;
   color: white;
   width: 100%;
-  justify-content: center;
-  /* padding: 0 12%; */
-  /* background-color: #181d22; */
-  /* opacity: 70%;   */
+  font-size: 28px;
+  font-weight: 600;
+  z-index: 1;
+}
+.desctop_header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8%;
 }
 
-.header_main{
-    /* background-color: #181d22; */
+.header_background{
+    background-color: #181d22;
+}
+.header_background_transparent{
+    background-color: transparent;
 }
 
-.header img{
+.header_logo img{
   height: 22px;
-  padding-right: 24px;
-}
-
-.header a{
-  color: white;
-  height: 24px;
-  text-decoration: none;
-  width: 285px; 
+  width: 190px;
 }
 
 .menu{
-  width: 588;
-  padding-left: 24px;
+  font-size: 24px;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 .menu a{
-  padding-left: 32px;
+  padding-left: 24px;
 }
 
-.link_change{
-
+.link{
+  color: white;
+  text-decoration: none;
 }
+
+.link.active{
+  font-weight: bold;
+  text-decoration: underline #FFED4C 3px; 
+}
+
 
 @keyframes link_underline{
-  from{opacity: 0;}
-  to{opacity: 100;}
+  to{text-decoration: underline #FFED4C 3px; }
 }
+
+
+
 
 /*!**********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/hero_page/marquee.css ***!
   \**********************************************************************************************************************************************************/
-.marquee-wrapper {
-  /* overflow: hidden; */
-  /* position: relative; */
-}
-
-.marquee-wrapper:after {
-  /* position: absolute; */
-  content: ' ';
-  right: 0;
-  top: 0;
-  height: 100%;
-}
-
-.marquee {
+.marquee_conteiner {
+  width: 100%;
+  overflow: hidden;
   white-space: nowrap;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+
+.marquee_wrapper{
+  display: flex;
+  width: max-content;
+  animation: move 10s linear infinite;
+}
+
+.marquee_text {
+  white-space: nowrap;
+}
+
+@keyframes move{
+  0%{transform: translateX(0%);}
+  100%{transform: translateX(-20%);}
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/header/m_header.css ***!
+  \********************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+
+  .desctop_header{
+    display: none;
+  }
+
+  .m_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  } 
+
+  .header{
+    height: 56px;
+    align-content: center;    
+    position: fixed;
+    color: white;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;    
+  }
+
+  .m_header_popup_menu{
+    display: none;
+  }
+
+  /* .header div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+  }
+
+  .header_background{
+      background-color: #181d22;
+  }
+  .header_background_transparent{
+      background-color: transparent;
+  }
+
+  .header_logo img{
+    height: 22px;
+    width: 190px;
+  }
+
+  .menu{
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  .menu a{
+    padding-left: 24px;
+  }
+
+  .link{
+    color: white;
+    text-decoration: none;
+  }
+
+  .link.active{
+    font-weight: bold;
+    text-decoration: underline #FFED4C 3px; 
+  }
+
+
+  @keyframes link_underline{
+    to{text-decoration: underline #FFED4C 3px; }
+  } */
+
+}
+
+
+
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/hero_page/m_hero_page.css ***!
+  \**************************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+
+  .hero_page_image {
+    /* background-image: url(../../images/Main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    /* height: 100%; */
+    padding-left: 16px;
+    padding-top: 288px
+  }
+
+ .hero_page_slogan{
+    font-size: 38px;
+    height: 159px;
+    width: 343px;
+    padding-bottom: 24px;
+  }
+
+  .hero_page_but{
+    height:44px ;
+    width: 138px;
+    font-size: 14px;
+  }
+  .hero_page_but_catolog{
+    margin-right: 8px;
+  }
+
+  .hero_page_but_catolog img{
+  padding-left: 4px;
+  height: 8px;
+  width: 8px;
+  }
+
+  .hero_marquee_box{
+    height: 56px;
+  }
+  .hero_page_run_text{
+    word-spacing: 8px;
+    letter-spacing: 4%;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+}
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/m_about.css ***!
+  \*********************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+  .about{
+    /* background-image: url(../../images/About_preview.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+
+    background-image: none;
+
+    background-color: #1A1F24;
+    padding: 80px 16px 59px;
+    height: 667px;
+    box-sizing: border-box;
+  }
+
+  .about_text{
+    color: white;
+    font-size: 16px;
+  }
+
+  .about_text:nth-child(2){
+    height: 63px;
+    padding-bottom: 336px;
+  }
+
+  .about_text_head{
+    font-size: 22px;
+    padding-bottom: 16px;
+  }
+}
+/*!***********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/m_mission.css ***!
+  \***********************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+
+  .m_mission_box{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    width: 375px;
+  }
+
+  .m_mission{
+    display: none;
+  }
+
+  .mission{
+    height: calc(299px + 368px); 
+    padding: 0;
+  }
+
+  .m_mission_target{
+    height: 299px;
+    background-color: #ffed4c;
+    padding: 74px 16px;
+    box-sizing: border-box;
+    max-width: 375px;
+  }
+
+  .m_mission_head_text:first-child{
+    color: #1A1F24;
+    font-size: 22px;
+    padding-bottom: 16px;
+  }
+
+  .m_mission_text{
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .m_mission_help{
+    height: 368px;
+    color: white;
+    padding: 60px 16px;
+    background: linear-gradient(to bottom, #1A1F24, #141719);
+
+    overflow-x: auto;
+    /* max-width: 430px; */
+  }
+
+  .m_mission_head_text{
+    font-size: 38px;
+    font-weight: bold;
+    padding-bottom: 32px;
+    position: sticky;
+    left: 0;
+  }
+
+  /* .m_mission_text{
+  } */
+
+  .m_mission_map{
+    font-size: 14px;
+    padding-bottom: 32px;
+    position: sticky;
+    left: 0;
+    align-items: center;
+  }
+  .m_mission_text_list{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+  }
+  .m_mission_help::-webkit-scrollbar{
+    display: none;
+    opacity: 0;
+  }
+  .m_mission_text_list li{
+    flex-shrink: 0;
+  }
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/values/m_values.css ***!
+  \********************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+  .m_values_map{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    left: 16px;
+    padding-top: 60px;
+    height: 20px;
+    align-items: center;
+  }
+.m_values_map img{
+  height: 10px;
+  width: 10px;
+}
+
+  .m_values{
+    height: 364px;
+    width: 375px;
+    overflow-x: auto;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 16px;
+    gap: 24px;
+    box-sizing: border-box;
+    /* пока что нету background-image: url(../../images/About_values.jpg); */
+  }
+
+ .m_values_text_box{
+    color: white;
+    width: 343px;
+    height: 192px;
+    padding-left: unset;
+    left: 0;
+    flex-shrink: 0;
+    padding-top: 112px;
+  }
+
+  .values_text{
+    font-size: 16px ;
+  }
+
+  .values_text_head{
+    color: #FFED4C;
+    font-size: 22px;
+    padding-bottom: 16px;
+  }
+}
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/usp/m_usp.css ***!
+  \**************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+  .usp{
+      background-color: #191f24;
+      height: 667px;
+      padding-top: unset;
+  }
+
+  .usp_box{
+    display: flex;
+    justify-content: unset;
+    align-items: end;
+    background-image: url(8c7c4c112f611d49775c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 0 16px;
+  }
+
+  .usp_text{
+    height: 84px;
+    width: 343px;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 66px;
+  }
+  .m_usp_map{
+    display: flex;
+    color: white;
+    position: absolute;
+    left: 16px;
+    padding-top: 62px;
+  }
+}
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/contacts/m_contacts.css ***!
+  \************************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+  .contacts{
+    height: unset;
+    width: 375px;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    background-color: #191F24;
+  }
+
+  .contacts_box{
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    gap: 8px;
+  }
+
+  .contacts_box ul{
+    width: 167px;
+    height: 104px;
+  }
+
+  .contacts_text{
+    color: white;
+    padding: 64px 16px;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    padding-right: unset;
+    height: 274px;
+    box-sizing: border-box;
+  }
+
+  .contacts_text_list{
+    font-size: 14px;
+    list-style: none;
+    font-weight: normal;
+  }
+
+  .contacts_text_list a{
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .contacts_text_list:first-child{
+    font-weight: bold;
+    padding-bottom: 16px;
+  }
+
+  .contacts_text_list:nth-child(2){
+  padding: 8px 0;
+  }
+  .contacts_text_list:nth-child(3){
+    font-weight: bold;
+  }
+
+  .contacts_text_list_zvonok {
+    color: #ffed4c;
+  }
+
+  .contacts_map{
+    width:100%;
+    height: 320px;
+    background-color: grey;
+    margin-top: unset;
+    padding: 0;
+  }
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/footer/m_footer.css ***!
+  \********************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+  .footer{
+    display: flex;
+    flex-direction: colrumn;
+    height: unset;
+    background:linear-gradient(to top,#323C45,#262A2D);
+    color: white;
+    font-size: 14px; 
+  }
+
+  .footer_box{
+    display: flex;
+    flex-direction: column;
+    padding: 64px 16px 30px;
+  }
+
+  .footer_social{
+    height: unset;
+    width: unset;
+    padding-right: unset;
+    padding-bottom: 24px;
+  }
+  .footer_social_logo{
+    height: 16px;
+    width: unset;
+    padding-bottom: 16px;
+  }
+
+  .footer_social_contacts{
+    padding-bottom: 16px;
+  }
+  .footer_social_contacts p:first-child {
+    padding-bottom: 15px;
+    text-decoration: underline;
+  }
+
+  .footer_social_icon{
+    padding-right: 8px;
+    height: 22px;
+    width: 22px;
+    text-decoration: none;
+  }
+  .footer_social_icon img{
+    height: 22px;
+    width: 22px;
+  }
+
+  .footer_social_icon:first-child{
+    padding-right: unset;
+  }
+
+  .footer_adress{
+    list-style: none;
+    width:unset;
+    height: unset;
+    padding-right: unset;
+  }
+
+  .footer_adress p{
+    padding-bottom: 8px;
+  }
+
+  .footer_adress p:nth-child(5){
+    padding-bottom: 18px;
+  }
+
+  .footer_nav{
+    padding-top: 24px;
+    width: unset;
+    list-style: none;
+    width: 32%;
+  }
+  .footer_nav li:first-child{
+    padding-bottom: 8px;
+    font-weight:bold ;
+    text-transform: uppercase;
+  }
+  .footer_nav a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  }
+
+  .credit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 16px;
+    align-items: unset;
+    background-color: #1A1F24;
+    font-size: 10px;
+    opacity: 65%;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
 }
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/pages/index.css ***!
   \*********************************************************************************************************************************************/
+
 
