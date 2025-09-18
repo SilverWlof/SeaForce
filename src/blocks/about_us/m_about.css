@@ -1,0 +1,29 @@
+@media screen and (max-width: 430px ){
+  .about{
+    /* background-image: url(../../images/About_preview.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+
+    background-image: none;
+
+    background-color: #1A1F24;
+    padding: 80px 16px 59px;
+    height: 667px;
+    box-sizing: border-box;
+  }
+
+  .about_text{
+    color: white;
+    font-size: 16px;
+  }
+
+  .about_text:nth-child(2){
+    height: 63px;
+    padding-bottom: 336px;
+  }
+
+  .about_text_head{
+    font-size: 22px;
+    padding-bottom: 16px;
+  }
+}

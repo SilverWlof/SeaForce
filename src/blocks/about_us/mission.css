@@ -1,3 +1,7 @@
+.m_mission_box{
+  display: none;
+}
+
 .mission{
   display: flex;
   color: white;

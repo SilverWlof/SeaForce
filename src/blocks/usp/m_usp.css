@@ -1,0 +1,34 @@
+@media screen and (max-width: 430px ){
+  .usp{
+      background-color: #191f24;
+      height: 667px;
+      padding-top: unset;
+  }
+
+  .usp_box{
+    display: flex;
+    justify-content: unset;
+    align-items: end;
+    background-image: url(../../images/About_UTP.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 0 16px;
+  }
+
+  .usp_text{
+    height: 84px;
+    width: 343px;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 66px;
+  }
+  .m_usp_map{
+    display: flex;
+    color: white;
+    position: absolute;
+    left: 16px;
+    padding-top: 62px;
+  }
+}

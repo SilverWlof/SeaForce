@@ -16,7 +16,6 @@
 
 .hero_page_slogan{
   font-size: 64px;
-  font-family: "Inter", "Arial", sans-serif;
   font-weight: bold;
   color: white;
   height: 249px;
@@ -39,7 +38,6 @@
 .hero_marquee_box{
   background-color: #FFED4C;  
   height: 96px;
-  margin: 0;
   align-content: center;
 }
 

@@ -1,0 +1,78 @@
+@media screen and (max-width: 430px ){
+
+  .m_mission_box{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    width: 375px;
+  }
+
+  .m_mission{
+    display: none;
+  }
+
+  .mission{
+    height: calc(299px + 368px); 
+    padding: 0;
+  }
+
+  .m_mission_target{
+    height: 299px;
+    background-color: #ffed4c;
+    padding: 74px 16px;
+    box-sizing: border-box;
+    max-width: 375px;
+  }
+
+  .m_mission_head_text:first-child{
+    color: #1A1F24;
+    font-size: 22px;
+    padding-bottom: 16px;
+  }
+
+  .m_mission_text{
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .m_mission_help{
+    height: 368px;
+    color: white;
+    padding: 60px 16px;
+    background: linear-gradient(to bottom, #1A1F24, #141719);
+
+    overflow-x: auto;
+    /* max-width: 430px; */
+  }
+
+  .m_mission_head_text{
+    font-size: 38px;
+    font-weight: bold;
+    padding-bottom: 32px;
+    position: sticky;
+    left: 0;
+  }
+
+  /* .m_mission_text{
+  } */
+
+  .m_mission_map{
+    font-size: 14px;
+    padding-bottom: 32px;
+    position: sticky;
+    left: 0;
+    align-items: center;
+  }
+  .m_mission_text_list{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+  }
+  .m_mission_help::-webkit-scrollbar{
+    display: none;
+    opacity: 0;
+  }
+  .m_mission_text_list li{
+    flex-shrink: 0;
+  }
+}

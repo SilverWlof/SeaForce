@@ -3,6 +3,8 @@
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
 }
 
 .marquee_wrapper{
@@ -13,7 +15,6 @@
 
 .marquee_text {
   white-space: nowrap;
-  font-size: 1.2e
 }
 
 @keyframes move{

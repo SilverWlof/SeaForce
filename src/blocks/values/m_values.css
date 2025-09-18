@@ -1,0 +1,48 @@
+@media screen and (max-width: 430px ){
+  .m_values_map{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    left: 16px;
+    padding-top: 60px;
+    height: 20px;
+    align-items: center;
+  }
+.m_values_map img{
+  height: 10px;
+  width: 10px;
+}
+
+  .m_values{
+    height: 364px;
+    width: 375px;
+    overflow-x: auto;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 16px;
+    gap: 24px;
+    box-sizing: border-box;
+    /* пока что нету background-image: url(../../images/About_values.jpg); */
+  }
+
+ .m_values_text_box{
+    color: white;
+    width: 343px;
+    height: 192px;
+    padding-left: unset;
+    left: 0;
+    flex-shrink: 0;
+    padding-top: 112px;
+  }
+
+  .values_text{
+    font-size: 16px ;
+  }
+
+  .values_text_head{
+    color: #FFED4C;
+    font-size: 22px;
+    padding-bottom: 16px;
+  }
+}

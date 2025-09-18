@@ -5,17 +5,13 @@
   height: 927px;
   background-image: url(../../images/About_values.jpg);background-repeat: no-repeat;
   background-size: cover;
+  gap: 32px;
 }
 .values_text_box{
   color: white;
   width: 588px;
   height: 235px;
   padding-left: 50%;
-}
-.values_text_box:nth-child(2)
-{
-  padding-bottom: 32px;
-  padding-top: 32px;
 }
 
 .values_text{
@@ -26,4 +22,7 @@ margin-left: 24px;
 .values_text_head{
   font-size: 28px;
   padding-bottom: 12px;
+}
+.m_values_map{
+  display: none;
 }

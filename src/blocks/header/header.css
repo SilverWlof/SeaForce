@@ -1,3 +1,6 @@
+.m_header{
+  display: none;
+}
 .header{
   height: 96px;
   align-content: center;
@@ -6,9 +9,9 @@
   width: 100%;
   font-size: 28px;
   font-weight: 600;
-
+  z-index: 1;
 }
-.header div{
+.desctop_header{
   display: flex;
   justify-content: space-between;
   padding: 0 8%;
@@ -50,5 +53,6 @@
 @keyframes link_underline{
   to{text-decoration: underline #FFED4C 3px; }
 }
+
 
 

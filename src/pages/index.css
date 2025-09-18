@@ -12,3 +12,13 @@
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/header/header.css");
 @import url("../blocks/hero_page/marquee.css");
+
+
+@import url("../blocks/header/m_header.css");
+@import url("../blocks/hero_page/m_hero_page.css");
+@import url("../blocks/about_us/m_about.css");
+@import url("../blocks/about_us/m_mission.css");
+@import url("../blocks/values/m_values.css");
+@import url("../blocks/usp/m_usp.css");
+@import url("../blocks/contacts/m_contacts.css");
+@import url("../blocks/footer/m_footer.css");

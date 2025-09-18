@@ -64,7 +64,7 @@ import "../pages/index.css";
       });
     },
     {
-      threshold: 0.9, 
+      threshold: 0.99, 
     }
   );
 

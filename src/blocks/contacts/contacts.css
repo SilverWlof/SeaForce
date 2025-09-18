@@ -29,28 +29,30 @@
   padding-right: 6.7%;
 }
 
-.contacts_text__list{
+.contacts_text_list{
   font-size: 24px;
   list-style: none;
   font-weight: normal;
 }
 
-.contacts_text__list{
+.contacts_text_list a{
+  color: inherit;
+  text-decoration: inherit;
 }
 
-.contacts_text__list:first-child{
+.contacts_text_list:first-child{
   font-weight: bold;
 }
 
-.contacts_text__list:nth-child(2){
+.contacts_text_list:nth-child(2){
 padding: 24px 0;
 }
-.contacts_text__list:nth-child(3){
+.contacts_text_list:nth-child(3){
   font-weight: bold;
 }
 
-.contacts_text__list a{
-  text-decoration: none;
+.contacts_text_list_zvonok {
+  text-decoration: underline;
   color: #ffed4c;
 }
 

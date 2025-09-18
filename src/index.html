@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SEAFORCE</title>
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=225d136c-2999-413b-b67b-18c0ca175f03&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?&lang=ru_RU" type="text/javascript"></script>
 
 </head>
 <body class="body">
   <div class="page">
 
     <header class="header header_background">
-      <div class=""> 
+      <div class="desctop_header"> 
         <a href="#hero" class="header_logo"> <img src="./images/SEAFORCE.svg"></a>
         <a href="tel:+79217930398"  class="link" >+7 (921) 793-03-98</a>
         <nav class="menu">
@@ -22,12 +22,28 @@
           <a href="#contacts" class="link">Контакты</a>
         </nav>
       </div>
+      <div class="m_header">
+        <a href="#hero" class="header_logo"> <img src="./images/SEAFORCE.svg"></a>
+        <img src="./images/menu_burger.svg" alt="menu">
+        <div class="m_header_popup_menu">
+          <nav class="menu">
+            <a href="#about_us" class="link">О нас</a>
+            <a href="#catalog" class="link">Каталог</a>
+            <a href="#projects" class="link">Проекты</a>
+            <a href="#contacts" class="link">Контакты</a>
+          </nav>
+        </div>
+
+      </div>
+
+
+
     </header>
 
     <main class="main">
 
       <div class='hero_page'>
-        <a name="hero" ></a>
+        <a name="hero" class="break_point"></a>
         <div class="hero_page_image">     
           <h1 class="hero_page_slogan"> Надёжное палубное оборудование</h1>
           <button class= "hero_page_but hero_page_but_catolog">Каталог <img src="./images/ArrowRight.png" alt=""></button>
@@ -36,13 +52,12 @@
 
         <div class="hero_marquee_box marquee_conteiner">
           <div class="hero_page_run_text marquee_wrapper">
-            <p class="marquee_text">проектирование изготовление внедрение сервис&nbsp;</p>
-            <p class="marquee_text">проектирование изготовление внедрение сервис&nbsp;</p>
+            <p class="marquee_text">ПРОЕКТИРОВАНИЕ изготовление внедрение сервис&nbsp;</p>
+            <p class="marquee_text">проектирование изготовление внедрение сервис&nbsp;</p> 
             <p class="marquee_text">проектирование изготовление внедрение сервис&nbsp;</p>
             <p class="marquee_text">проектирование изготовление внедрение сервис&nbsp;</p>
           </div>
         </div>
-
       </div>
 
       <div class="abiut_as">
@@ -52,24 +67,50 @@
             <p class="about_text text_animation text_animation_start" data-delay="0.9s">АО «Сифорс» — российская инжиниринговая компания с собственным производством. </p>
             <p class="about_text text_animation text_animation_start" data-delay="1s">Мы создаём надёжное палубное оборудование и металлоконструкции, автоматизируем промышленные процессы и модернизируем производство под ключ.  </p>
         </div>
+
         <div class="mission">
-          <div class="mission_box">
+          <div class="mission_box m_mission">
             <h3 class="mission_head_text">Наша миссия</h3>
             <p class="mission_text">Повышаем эффективность промышленности с помощью инженерной<br> экспертизы, современного оборудования и полного сопровождения<br> проектов — от идеи до внедрения.</p>
             <hr class="mission_line">
-            <h3 class="mission_head_text">Сифорс помогает:</h3>
 
+            <h3 class="mission_head_text">Сифорс помогает:</h3>
+            
             <ul class="mission_text mission_text_list">
               <li >Снизить <br>зависимость от импорта</li>
               <li >Повысить надёжность<br> и управляемость процессов</li>
               <li >Ускорить запуск<br> новых производств</li>
             </ul>
-            
           </div>
+
+          <div class="m_mission_box">
+
+            <div class="m_mission_target">
+              <h3 class="m_mission_head_text">Наша миссия</h3>
+              <p class="m_mission_text">Повышаем эффективность промышленности с помощью инженерной<br> экспертизы, современного оборудования и полного сопровождения<br> проектов — от идеи до внедрения.</p>
+            </div>
+
+            <div class="m_mission_help">
+
+              <p class="m_mission_map">Главная&nbsp;<img src="./images/arr_r_y.svg">&nbsp;<b>О нас</b></p>
+
+              <h3 class="m_mission_head_text">Сифорс <br> помогает:</h3>
+              <ul class="m_mission_text m_mission_text_list">
+                <li >Снизить <br>зависимость от импорта</li>
+                <li >Повысить надёжность<br> и управляемость процессов</li>
+                <li >Ускорить запуск<br> новых производств</li>
+              </ul>
+            </div>
+
+          </div>
+                      
         </div>
 
-        <div class="values">
-          <div class="values_text_box">
+        <div class="values m_values">
+
+          <p class="m_values_map">Главная&nbsp;<img src="./images/arr_r_y.svg">&nbsp;<b> О нас</b></p>
+
+          <div class="values_text_box m_values_text_box">
             <h3 class="values_text_head">Наши ценности</h3>
             <ul>
               <li class="values_text">Качество — без компромиссов</li>
@@ -79,7 +120,8 @@
               <li class="values_text">Клиентоориентированность</li>
             </ul>
           </div>
-                    <div class="values_text_box">
+
+          <div class="values_text_box m_values_text_box">
             <h3 class="values_text_head">Почему выбирают нас</h3>
             <ul>
               <li class="values_text">Собственное производство оборудования</li>
@@ -89,7 +131,8 @@
               <li class="values_text">Прозрачность на всех этапах</li>
             </ul>
           </div>
-                    <div class="values_text_box">
+
+          <div class="values_text_box m_values_text_box">
             <h3 class="values_text_head">Ваша выгода</h3>
             <ul>
               <li class="values_text">Оптимизация затрат</li>
@@ -98,31 +141,33 @@
               <li class="values_text">Поддержка на каждом этапе</li>
               <li class="values_text">Решения, адаптированные под российские реалии</li>
             </ul>
-          </div>          
+          </div> 
+                   
         </div>
 
         <div class="usp">
+          <p class="m_usp_map">Главная&nbsp;<img src="./images/arr_r_y.svg">&nbsp;<b> О нас</b></p>
           <div class="usp_box">
             <p class="usp_text text_animation text_animation_start" data-delay="1.5s"><b>Сифорс</b> — это и производитель, и инженерный партнёр. Мы не просто поставляем оборудование — мы берём на себя ответственность за результат.</p>
           </div>
+          <a name="contacts" class="break_point"></a>
         </div>
 
-        <div class="contacts">
-          <a name="contacts" class="break_point"></a>
+        <div class="contacts">          
           <div class="contacts_text">
             <h2>Контакты</h2>
             <div class="contacts_box">
               <ul>
-                <li class="contacts_text__list">ОТДЕЛ ПРОДАЖ</li>
-                <li class="contacts_text__list">office@ao-seaforce.ru</li>
-                <li class="contacts_text__list">+7 (921) 793-03-98</li>
-                <li class="contacts_text__list"><a href="tel:+79217930398">Заказать звонок</a></li>
+                <li class="contacts_text_list">ОТДЕЛ ПРОДАЖ</li>
+                <li class="contacts_text_list">office@ao-seaforce.ru</li>
+                <li class="contacts_text_list"><a href="tel:+79217930398">+7 (921) 793-03-98</a></li>
+                <li class="contacts_text_list contacts_text_list_zvonok"><a href="tel:+79217930398">Заказать звонок</a></li>
               </ul>
               <ul >
-                <li class="contacts_text__list">НАШ ОФИС</li>
-                <li class="contacts_text__list">г. Санкт-Петербург</li>
-                <li class="contacts_text__list">ул. Дудко, д. 8</li>
-                <li class="contacts_text__list">пн–пт, с 7:00 до 17:00</li>
+                <li class="contacts_text_list">НАШ ОФИС</li>
+                <li class="contacts_text_list">г. Санкт-Петербург</li>
+                <li class="contacts_text_list">ул. Дудко, д. 8</li>
+                <li class="contacts_text_list">пн–пт, с 7:00 до 17:00</li>
               </ul>
             </div>
           </div>
@@ -138,7 +183,7 @@
         <div class="footer_social">
           <img src="./images/SEAFORCE.svg" alt="logo" class="footer_social_logo">
           <div class="footer_social_contacts">
-            <p>+7 (921) 793-03-98</p>
+            <p><b>+7 (921) 793-03-98</b></p>
             <p>office@ao-seaforce.ru<br> г. Санкт-Петербург, ул. Дудко, 8</p>
           </div>
           <a href="https://vk.com/seaforcee" class="footer_social_icon">
@@ -150,7 +195,7 @@
         </div>
 
         <div class="footer_adress">
-          <p>Юридический адрес:</p>
+          <p><b>Юридический адрес:</b></p>
           <p>г. Санкт-Петербург, ул. Дудко, <br> д. 3 литера АБ, помещ. 1-н</p>
           <p>Политика конфиденциальности </p>
           <p>Политика общества в отношении<br> обработки персональных данных</p>
