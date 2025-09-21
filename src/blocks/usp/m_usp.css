@@ -9,7 +9,7 @@
     display: flex;
     justify-content: unset;
     align-items: end;
-    background-image: url(../../images/About_UTP.jpg);
+    background-image: url(../../images/mobila/mob-About_UTP.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,7 +19,8 @@
 
   .usp_text{
     height: 84px;
-    width: 343px;
+    width: 100vw;
+    max-width:430px;
     color: white;
     font-size: 16px;
     padding-bottom: 66px;

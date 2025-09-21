@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 16px;
+    /* z-index: 2; */
   } 
 
   .header{
@@ -15,58 +16,91 @@
     align-content: center;    
     position: fixed;
     color: white;
-    width: 100%;
-    font-size: 28px;
-    font-weight: 600;    
+    width: 100%; 
   }
 
-  .m_header_popup_menu{
-    display: none;
-  }
-
-  /* .header div{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 8%;
-  }
-
-  .header_background{
-      background-color: #181d22;
-  }
-  .header_background_transparent{
-      background-color: transparent;
-  }
-
-  .header_logo img{
+  .header_logo{
     height: 22px;
     width: 190px;
+    z-index: 1;
   }
 
-  .menu{
-    font-size: 24px;
+  .burger_but{
+    background-image: url(../../images/icon/menu_burger.svg);
+    background-color: transparent;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    border: none;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .but_close{
+    background-image: url(../../images/icon/menu_close.svg);
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+
+  .m_header_popup_menu{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1F24;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 84px 16px;
+  }
+
+  .popup_open{
+    visibility: visible;
+
+  }
+
+.m_header_popup_menu ul{
+    list-style: none;
+  }
+
+  .popup_menu{
+    display: flex;
+    flex-direction:column;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    padding-bottom: 48px;
+    font-size: 38px;
+  }
+
+  .popup_tel{
+    color: #FFED4C;
+    font-size: 22px;
+  }
+
+  .popup_contact{
+    font-size: 22px;
     font-weight: normal;
-    text-decoration: none;
+    padding: 16px 0;
   }
 
-  .menu a{
-    padding-left: 24px;
+  .popup_social_icon{
+    width: 36px;
+    height: 36px;
   }
-
-  .link{
-    color: white;
-    text-decoration: none;
+  .popup_social_icon:first-child{
+    padding-right: 12px ;
   }
-
-  .link.active{
-    font-weight: bold;
-    text-decoration: underline #FFED4C 3px; 
-  }
-
-
-  @keyframes link_underline{
-    to{text-decoration: underline #FFED4C 3px; }
-  } */
-
 }
 
 

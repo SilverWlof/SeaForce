@@ -4,7 +4,8 @@
     display: flex;
     color: black;
     flex-direction: column;
-    width: 375px;
+    width: 100vw;
+    max-width:430px;
   }
 
   .m_mission{
@@ -21,7 +22,8 @@
     background-color: #ffed4c;
     padding: 74px 16px;
     box-sizing: border-box;
-    max-width: 375px;
+    width: 100vw;
+    max-width:430px;
   }
 
   .m_mission_head_text:first-child{
@@ -36,13 +38,12 @@
   }
 
   .m_mission_help{
+    display: block;
     height: 368px;
     color: white;
     padding: 60px 16px;
     background: linear-gradient(to bottom, #1A1F24, #141719);
-
     overflow-x: auto;
-    /* max-width: 430px; */
   }
 
   .m_mission_head_text{
@@ -53,9 +54,6 @@
     left: 0;
   }
 
-  /* .m_mission_text{
-  } */
-
   .m_mission_map{
     font-size: 14px;
     padding-bottom: 32px;
@@ -65,14 +63,36 @@
   }
   .m_mission_text_list{
     display: flex;
-    gap: 16px;
     list-style: none;
+    scroll-behavior: smooth;
+    height: 58px;
   }
   .m_mission_help::-webkit-scrollbar{
     display: none;
-    opacity: 0;
   }
   .m_mission_text_list li{
     flex-shrink: 0;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+  }  
+  
+  .head{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .num{
+    color: #ffed4c;
+    font-size: 80px;
+    font-weight: 600;
+    padding-right: 24px;
+  }
+  .m_mission_text_list li:nth-child(2) .num{
+    padding-left: 24px;
+  }
+  .text{
+    height: 58px;
   }
 }

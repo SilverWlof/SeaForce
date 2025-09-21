@@ -1,11 +1,7 @@
 @media screen and (max-width: 430px ){
   .about{
-    /* background-image: url(../../images/About_preview.jpg); */
-    /* background-repeat: no-repeat; */
-    /* background-size:cover; */
-
-    background-image: none;
-
+    background-image: url(../../images/mobila/mob-About_preview.jpg);
+    background-size:cover;
     background-color: #1A1F24;
     padding: 80px 16px 59px;
     height: 667px;

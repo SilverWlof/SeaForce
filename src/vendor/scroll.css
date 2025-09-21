@@ -1,0 +1,38 @@
+  @media screen and (max-width: 430px ){
+  .scroll-wrapper{
+    /* display: inherit; */
+
+  }
+
+  .scroll-content{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+  }
+
+  .scroll-content *{
+    flex: 0 0 auto;
+  }
+
+  .m_values .custom-scrollbar {
+    margin-top: 356px;  
+  }
+
+  .custom-scrollbar {
+    position: absolute;
+    left: 0;
+    height: 8px;
+    background: #5C6E7D;
+    width: 100vw;
+    margin-top: 78px;
+  }
+
+
+
+  .custom-thumb {
+    position: absolute;
+    height: 8px;
+    background: #ffed4c;
+  }
+}

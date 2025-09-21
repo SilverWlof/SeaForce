@@ -1,11 +1,9 @@
 @media screen and (max-width: 430px ){
 
   .hero_page_image {
-    /* background-image: url(../../images/Main.jpg);
+    background-image: url(../../images/mobila/mob-Main.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    /* height: 100%; */
+    background-position: 0 -2vh;
     padding-left: 16px;
     padding-top: 288px
   }

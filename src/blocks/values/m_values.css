@@ -9,21 +9,24 @@
     height: 20px;
     align-items: center;
   }
-.m_values_map img{
-  height: 10px;
-  width: 10px;
-}
+
+  .m_values_map img{
+    height: 10px;
+    width: 10px;
+  }
 
   .m_values{
     height: 364px;
-    width: 375px;
+    width: 100vw;
+    max-width:430px;
     overflow-x: auto;
     flex-direction: row;
     justify-content: start;
     padding-left: 16px;
     gap: 24px;
     box-sizing: border-box;
-    /* пока что нету background-image: url(../../images/About_values.jpg); */
+    background-image: url(../../images/mobila/mob-About_values.jpg);
+    background-size: cover;
   }
 
  .m_values_text_box{

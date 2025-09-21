@@ -22,6 +22,8 @@ margin-left: 24px;
 .values_text_head{
   font-size: 28px;
   padding-bottom: 12px;
+  list-style: none;
+  font-weight: bold;
 }
 .m_values_map{
   display: none;

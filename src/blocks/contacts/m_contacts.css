@@ -1,7 +1,8 @@
 @media screen and (max-width: 430px ){
   .contacts{
     height: unset;
-    width: 375px;
+    width: 100vw;
+    max-width:430px;
     background-image: none;
     display: flex;
     flex-direction: column;

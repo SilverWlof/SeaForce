@@ -22,21 +22,44 @@
           <a href="#contacts" class="link">Контакты</a>
         </nav>
       </div>
+
+
+
+
+
       <div class="m_header">
-        <a href="#hero" class="header_logo"> <img src="./images/SEAFORCE.svg"></a>
-        <img src="./images/menu_burger.svg" alt="menu">
-        <div class="m_header_popup_menu">
-          <nav class="menu">
-            <a href="#about_us" class="link">О нас</a>
-            <a href="#catalog" class="link">Каталог</a>
-            <a href="#projects" class="link">Проекты</a>
-            <a href="#contacts" class="link">Контакты</a>
-          </nav>
+
+        <a href="#hero" class="header_logo link"> <img src="./images/SEAFORCE.svg"></a>
+        <button id="sid_menu_but" class="burger_but"></button>
+
+        <div id="sid_menu" class="m_header_popup_menu">
+          <ul class="popup_menu">
+            <li><a href="#about_us" class="link">О нас</a></li>
+            <li><a href="#catalog" class="link">Каталог</a></li>
+            <li><a href="#projects" class="link">Проекты</a></li>
+            <li><a href="#contacts" class="link">Контакты</a></li>
+          </ul>
+
+          <a href="tel:+79217930398" class="popup_tel">+7 (921) 793-03-98</a>
+
+          <ul class="popup_contact">              
+            <li>office@ao-seaforce.ru</li>
+            <li>г. Санкт-Петербург</li>
+            <li>ул. Дудко, д. 8</li>
+          </ul>          
+
+          <div class="popup_social">
+            <a href="https://vk.com/seaforcee" class="popup_social_icon">
+              <img src="./images/social media icons/SMM_vk.svg" alt="vk">
+            </a>
+            <a href="https://t.me/seaforcee" class="popup_social_icon">
+              <img src="./images/social media icons/SMM_telegram.svg" alt="telegram">
+            </a>
+          </div>
+
         </div>
 
       </div>
-
-
 
     </header>
 
@@ -46,7 +69,7 @@
         <a name="hero" class="break_point"></a>
         <div class="hero_page_image">     
           <h1 class="hero_page_slogan"> Надёжное палубное оборудование</h1>
-          <button class= "hero_page_but hero_page_but_catolog">Каталог <img src="./images/ArrowRight.png" alt=""></button>
+          <button class= "hero_page_but hero_page_but_catolog">Каталог <img src="./images/icon/ArrowRight.png" alt=""></button>
           <button class="hero_page_but hero_page_but_project">Проекты</button>
         </div>
 
@@ -61,6 +84,7 @@
       </div>
 
       <div class="abiut_as">
+
         <a name="about_us" class="break_point"></a>
         <div class="about">
           <h2 class="about_text about_text_head text_animation text_animation_start" data-delay="0.5s">О нас</h2>
@@ -68,7 +92,7 @@
             <p class="about_text text_animation text_animation_start" data-delay="1s">Мы создаём надёжное палубное оборудование и металлоконструкции, автоматизируем промышленные процессы и модернизируем производство под ключ.  </p>
         </div>
 
-        <div class="mission">
+        <div class="mission scroll-wrapper">
           <div class="mission_box m_mission">
             <h3 class="mission_head_text">Наша миссия</h3>
             <p class="mission_text">Повышаем эффективность промышленности с помощью инженерной<br> экспертизы, современного оборудования и полного сопровождения<br> проектов — от идеи до внедрения.</p>
@@ -77,9 +101,9 @@
             <h3 class="mission_head_text">Сифорс помогает:</h3>
             
             <ul class="mission_text mission_text_list">
-              <li >Снизить <br>зависимость от импорта</li>
-              <li >Повысить надёжность<br> и управляемость процессов</li>
-              <li >Ускорить запуск<br> новых производств</li>
+              <li>Снизить <br>зависимость от импорта</li>
+              <li>Повысить надёжность<br> и управляемость процессов</li>
+              <li>Ускорить запуск<br> новых производств</li>
             </ul>
           </div>
 
@@ -90,63 +114,78 @@
               <p class="m_mission_text">Повышаем эффективность промышленности с помощью инженерной<br> экспертизы, современного оборудования и полного сопровождения<br> проектов — от идеи до внедрения.</p>
             </div>
 
-            <div class="m_mission_help">
+            <div class="m_mission_help scroll-content">
 
-              <p class="m_mission_map">Главная&nbsp;<img src="./images/arr_r_y.svg">&nbsp;<b>О нас</b></p>
+              <p class="m_mission_map">Главная&nbsp;<img src="./images/icon/arr_r_y.svg">&nbsp;<b>О нас</b></p>
 
               <h3 class="m_mission_head_text">Сифорс <br> помогает:</h3>
-              <ul class="m_mission_text m_mission_text_list">
-                <li >Снизить <br>зависимость от импорта</li>
-                <li >Повысить надёжность<br> и управляемость процессов</li>
-                <li >Ускорить запуск<br> новых производств</li>
+              <ul class="m_mission_text m_mission_text_list ">
+                <li>
+                  <p><span class="num">1</span></p>
+                  <div class="text"><p><span class="head">Снизить </span><br>зависимость от импорта</p></div>
+                </li>
+                <li>
+                  <p><span class="num">2</span></p>
+                  <div class="text"><p><span class="head">Повысить надёжность</span><br> и управляемость процессов</p></div>
+                </li>
+                <li>
+                  <p><span class="num">3</span></p>
+                  <div class="text"><p><span class="head">Ускорить запуск</span><br> новых производств</p></div>
+                </li>
               </ul>
-            </div>
 
-          </div>
-                      
+              <div class="custom-scrollbar">
+                <div class="custom-thumb"></div>
+              </div>
+
+            </div>              
+
+          </div>                      
         </div>
 
-        <div class="values m_values">
+        <div class="values m_values scroll-wrapper">
 
-          <p class="m_values_map">Главная&nbsp;<img src="./images/arr_r_y.svg">&nbsp;<b> О нас</b></p>
+          <p class="m_values_map">Главная&nbsp;<img src="./images/icon/arr_r_y.svg">&nbsp;<b> О нас</b></p>
 
-          <div class="values_text_box m_values_text_box">
-            <h3 class="values_text_head">Наши ценности</h3>
-            <ul>
+          <div class="scroll-content">
+
+            <ul class="values_text_box m_values_text_box">
+              <li class="values_text_head">Наши ценности</li>
               <li class="values_text">Качество — без компромиссов</li>
               <li class="values_text">Ответственность за результат</li>
               <li class="values_text">Инженерная честность</li>
               <li class="values_text">Технологичность и инновации</li>
               <li class="values_text">Клиентоориентированность</li>
             </ul>
-          </div>
 
-          <div class="values_text_box m_values_text_box">
-            <h3 class="values_text_head">Почему выбирают нас</h3>
-            <ul>
+            <ul class="values_text_box m_values_text_box">
+              <li class="values_text_head">Почему выбирают нас</li>
               <li class="values_text">Собственное производство оборудования</li>
               <li class="values_text">Комплексный подход: проектирование, изготовление, внедрение, сервис</li>
               <li class="values_text">Адаптация под задачи клиента</li>
               <li class="values_text">Опыт в разных отраслях</li>
               <li class="values_text">Прозрачность на всех этапах</li>
             </ul>
-          </div>
-
-          <div class="values_text_box m_values_text_box">
-            <h3 class="values_text_head">Ваша выгода</h3>
-            <ul>
+              
+            <ul class="values_text_box m_values_text_box">
+              <li class="values_text_head">Ваша выгода</li>
               <li class="values_text">Оптимизация затрат</li>
               <li class="values_text">Быстрый запуск производств</li>
               <li class="values_text">Минимум простоев и технических сбоев</li>
               <li class="values_text">Поддержка на каждом этапе</li>
               <li class="values_text">Решения, адаптированные под российские реалии</li>
             </ul>
-          </div> 
+
+          <div class="custom-scrollbar">
+            <div class="custom-thumb"></div>
+          </div>
+
+          </div>          
                    
         </div>
 
         <div class="usp">
-          <p class="m_usp_map">Главная&nbsp;<img src="./images/arr_r_y.svg">&nbsp;<b> О нас</b></p>
+          <p class="m_usp_map">Главная&nbsp;<img src="./images/icon/arr_r_y.svg">&nbsp;<b> О нас</b></p>
           <div class="usp_box">
             <p class="usp_text text_animation text_animation_start" data-delay="1.5s"><b>Сифорс</b> — это и производитель, и инженерный партнёр. Мы не просто поставляем оборудование — мы берём на себя ответственность за результат.</p>
           </div>
