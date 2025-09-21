@@ -17,6 +17,47 @@
   \**************************************************************************************************************************************************/
  
 
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/scroll.css ***!
+  \***********************************************************************************************************************************************/
+  @media screen and (max-width: 430px ){
+  .scroll-wrapper{
+    /* display: inherit; */
+
+  }
+
+  .scroll-content{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+  }
+
+  .scroll-content *{
+    flex: 0 0 auto;
+  }
+
+  .m_values .custom-scrollbar {
+    margin-top: 356px;  
+  }
+
+  .custom-scrollbar {
+    position: absolute;
+    left: 0;
+    height: 8px;
+    background: #5C6E7D;
+    width: 100vw;
+    margin-top: 78px;
+  }
+
+
+
+  .custom-thumb {
+    position: absolute;
+    height: 8px;
+    background: #ffed4c;
+  }
+}
 /*!**************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/page/page.css ***!
   \**************************************************************************************************************************************************/
@@ -218,6 +259,8 @@ margin-left: 24px;
 .values_text_head{
   font-size: 28px;
   padding-bottom: 12px;
+  list-style: none;
+  font-weight: bold;
 }
 .m_values_map{
   display: none;
@@ -423,14 +466,14 @@ padding: 24px 0;
   position: fixed;
   color: white;
   width: 100%;
-  font-size: 28px;
-  font-weight: 600;
   z-index: 1;
 }
 .desctop_header{
   display: flex;
   justify-content: space-between;
   padding: 0 8%;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 .header_background{
@@ -512,6 +555,7 @@ padding: 24px 0;
     display: flex;
     justify-content: space-between;
     padding: 0 16px;
+    /* z-index: 2; */
   } 
 
   .header{
@@ -519,58 +563,91 @@ padding: 24px 0;
     align-content: center;    
     position: fixed;
     color: white;
-    width: 100%;
-    font-size: 28px;
-    font-weight: 600;    
+    width: 100%; 
   }
 
-  .m_header_popup_menu{
-    display: none;
-  }
-
-  /* .header div{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 8%;
-  }
-
-  .header_background{
-      background-color: #181d22;
-  }
-  .header_background_transparent{
-      background-color: transparent;
-  }
-
-  .header_logo img{
+  .header_logo{
     height: 22px;
     width: 190px;
+    z-index: 1;
   }
 
-  .menu{
-    font-size: 24px;
+  .burger_but{
+    background-image: url(8947c2d639ada5a35a8d.svg);
+    background-color: transparent;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    border: none;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .but_close{
+    background-image: url(cd13f40ccd7e0138a7de.svg);
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+
+  .m_header_popup_menu{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1F24;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 84px 16px;
+  }
+
+  .popup_open{
+    visibility: visible;
+
+  }
+
+.m_header_popup_menu ul{
+    list-style: none;
+  }
+
+  .popup_menu{
+    display: flex;
+    flex-direction:column;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    padding-bottom: 48px;
+    font-size: 38px;
+  }
+
+  .popup_tel{
+    color: #FFED4C;
+    font-size: 22px;
+  }
+
+  .popup_contact{
+    font-size: 22px;
     font-weight: normal;
-    text-decoration: none;
+    padding: 16px 0;
   }
 
-  .menu a{
-    padding-left: 24px;
+  .popup_social_icon{
+    width: 36px;
+    height: 36px;
   }
-
-  .link{
-    color: white;
-    text-decoration: none;
+  .popup_social_icon:first-child{
+    padding-right: 12px ;
   }
-
-  .link.active{
-    font-weight: bold;
-    text-decoration: underline #FFED4C 3px; 
-  }
-
-
-  @keyframes link_underline{
-    to{text-decoration: underline #FFED4C 3px; }
-  } */
-
 }
 
 
@@ -581,11 +658,9 @@ padding: 24px 0;
 @media screen and (max-width: 430px ){
 
   .hero_page_image {
-    /* background-image: url(../../images/Main.jpg);
+    background-image: url(078f7f190c7077f7ba70.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    /* height: 100%; */
+    background-position: 0 -2vh;
     padding-left: 16px;
     padding-top: 288px
   }
@@ -628,12 +703,8 @@ padding: 24px 0;
   \*********************************************************************************************************************************************************/
 @media screen and (max-width: 430px ){
   .about{
-    /* background-image: url(../../images/About_preview.jpg); */
-    /* background-repeat: no-repeat; */
-    /* background-size:cover; */
-
-    background-image: none;
-
+    background-image: url(56f89d6256ad71ea6c62.jpg);
+    background-size:cover;
     background-color: #1A1F24;
     padding: 80px 16px 59px;
     height: 667px;
@@ -664,7 +735,8 @@ padding: 24px 0;
     display: flex;
     color: black;
     flex-direction: column;
-    width: 375px;
+    width: 100vw;
+    max-width:430px;
   }
 
   .m_mission{
@@ -681,7 +753,8 @@ padding: 24px 0;
     background-color: #ffed4c;
     padding: 74px 16px;
     box-sizing: border-box;
-    max-width: 375px;
+    width: 100vw;
+    max-width:430px;
   }
 
   .m_mission_head_text:first-child{
@@ -696,13 +769,12 @@ padding: 24px 0;
   }
 
   .m_mission_help{
+    display: block;
     height: 368px;
     color: white;
     padding: 60px 16px;
     background: linear-gradient(to bottom, #1A1F24, #141719);
-
     overflow-x: auto;
-    /* max-width: 430px; */
   }
 
   .m_mission_head_text{
@@ -713,9 +785,6 @@ padding: 24px 0;
     left: 0;
   }
 
-  /* .m_mission_text{
-  } */
-
   .m_mission_map{
     font-size: 14px;
     padding-bottom: 32px;
@@ -725,15 +794,37 @@ padding: 24px 0;
   }
   .m_mission_text_list{
     display: flex;
-    gap: 16px;
     list-style: none;
+    scroll-behavior: smooth;
+    height: 58px;
   }
   .m_mission_help::-webkit-scrollbar{
     display: none;
-    opacity: 0;
   }
   .m_mission_text_list li{
     flex-shrink: 0;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+  }  
+  
+  .head{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .num{
+    color: #ffed4c;
+    font-size: 80px;
+    font-weight: 600;
+    padding-right: 24px;
+  }
+  .m_mission_text_list li:nth-child(2) .num{
+    padding-left: 24px;
+  }
+  .text{
+    height: 58px;
   }
 }
 /*!********************************************************************************************************************************************************!*\
@@ -750,21 +841,24 @@ padding: 24px 0;
     height: 20px;
     align-items: center;
   }
-.m_values_map img{
-  height: 10px;
-  width: 10px;
-}
+
+  .m_values_map img{
+    height: 10px;
+    width: 10px;
+  }
 
   .m_values{
     height: 364px;
-    width: 375px;
+    width: 100vw;
+    max-width:430px;
     overflow-x: auto;
     flex-direction: row;
     justify-content: start;
     padding-left: 16px;
     gap: 24px;
     box-sizing: border-box;
-    /* пока что нету background-image: url(../../images/About_values.jpg); */
+    background-image: url(a7af9f1545820b06a533.jpg);
+    background-size: cover;
   }
 
  .m_values_text_box{
@@ -801,7 +895,7 @@ padding: 24px 0;
     display: flex;
     justify-content: unset;
     align-items: end;
-    background-image: url(8c7c4c112f611d49775c.jpg);
+    background-image: url(ace9f691c8e601cf037e.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -811,7 +905,8 @@ padding: 24px 0;
 
   .usp_text{
     height: 84px;
-    width: 343px;
+    width: 100vw;
+    max-width:430px;
     color: white;
     font-size: 16px;
     padding-bottom: 66px;
@@ -830,7 +925,8 @@ padding: 24px 0;
 @media screen and (max-width: 430px ){
   .contacts{
     height: unset;
-    width: 375px;
+    width: 100vw;
+    max-width:430px;
     background-image: none;
     display: flex;
     flex-direction: column;
@@ -999,5 +1095,4 @@ padding: 24px 0;
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/pages/index.css ***!
   \*********************************************************************************************************************************************/
-
 
