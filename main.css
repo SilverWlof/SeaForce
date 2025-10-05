@@ -663,6 +663,7 @@ padding: 24px 0;
     background-position: 0 -2vh;
     padding-left: 16px;
     padding-top: 288px
+    background-size: cover;
   }
 
  .hero_page_slogan{
