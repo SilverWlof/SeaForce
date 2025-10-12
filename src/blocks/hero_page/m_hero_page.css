@@ -5,7 +5,10 @@
     background-repeat: no-repeat;
     background-position: 0 -2vh;
     padding-left: 16px;
-    padding-top: 288px
+    padding-top: 288px;
+    background-size: cover;
+    height: 100%;
+    /* проверить размер картинки и его размещение. на телефоне картинка вылазиет полностью не маштабируясь */
   }
 
  .hero_page_slogan{
@@ -39,5 +42,4 @@
     font-weight: 300;
     font-size: 18px;
   }
-
 }

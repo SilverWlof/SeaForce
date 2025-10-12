@@ -88,10 +88,13 @@
     font-size: 80px;
     font-weight: 600;
     padding-right: 24px;
+    transition: color 50ms linear;
   }
+
   .m_mission_text_list li:nth-child(2) .num{
     padding-left: 24px;
   }
+
   .text{
     height: 58px;
   }

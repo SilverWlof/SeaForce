@@ -1,7 +1,7 @@
 import "../pages/index.css";
 
-// import "./marquee";
-
+//*****************************************************************
+//Проявления текста когда блок поподает в зону видимости
 (()=>{
   const textElements = document.querySelectorAll('.text_animation');
   textElements.forEach(el => el.classList.remove('text_animation_start'));
@@ -21,6 +21,9 @@ import "../pages/index.css";
   textElements.forEach(el => observer.observe(el));
 })(),
 
+
+//*****************************************************************
+//Смена цвета подложки Header
 (()=>{
   const header = document.querySelector('.header');
   const break_point = document.querySelector('.hero_page_but');
@@ -42,6 +45,9 @@ import "../pages/index.css";
 }
 )(),
 
+
+//*****************************************************************
+//Гиперссылки
 (()=>{
   document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(".break_point");
@@ -73,6 +79,9 @@ import "../pages/index.css";
   }
 )(),
 
+
+//*****************************************************************
+//Горизонтальный скролл
 (()=>{
 
   document.querySelectorAll('.scroll-wrapper').forEach(wrapper => {
@@ -96,10 +105,12 @@ import "../pages/index.css";
   window.addEventListener('resize', updateThumb);
 
   updateThumb();
-});
-
+  });
 })(),
 
+
+//*****************************************************************
+//Бургер кнопка
 (()=>{
 
   const menu_but = document.querySelector("#sid_menu_but");
@@ -112,23 +123,66 @@ import "../pages/index.css";
       {
         if(e!='popup_open'){
           menu.classList.add('popup_open');
-          menu_but.classList.remove('burger_but');
-          menu_but.classList.add('but_close');
+          menu_but.classList.add('clicked');
         }
         else{
           menu.classList.remove('popup_open');
-          menu_but.classList.add('burger_but');
-          menu_but.classList.remove('but_close');  
+          menu_but.classList.remove('clicked');
         }  
       })
   }
 
   function closePopup(){
     menu.classList.remove('popup_open');
-    menu_but.classList.add('burger_but');
-    menu_but.classList.remove('but_close'); 
+    menu_but.classList.remove('clicked');
   }
 
   menu_but.addEventListener('click', openPopUp);  
   link.forEach(e=>e.addEventListener('click', closePopup))
+})(),
+
+
+//*************************************************************
+//Цвет текста при скроле
+(()=>{
+
+document.querySelectorAll('.scroll-content').forEach(el => {  
+  const colorChange = el.querySelectorAll('.color-change');
+
+  function ColorChange(){
+
+    el.addEventListener('scroll', () => {
+      const scrollLeft = el.scrollLeft; 
+      const maxScroll = el.scrollWidth - el.clientWidth; 
+      const scrollPercent = scrollLeft / maxScroll; 
+
+      colorChange.forEach(el => {
+        const start = parseFloat(el.dataset.start);
+        const end = parseFloat(el.dataset.end);
+
+        if (scrollPercent >= start && scrollPercent <= end) {        
+          const rangeProgress = (scrollPercent - start) / (end - start);
+
+          const endColor = [255, 237, 76];  // #ffed4c
+          const startColor = [92, 110, 125];    // #5C6E7D
+
+          const r = startColor[0] + (endColor[0] - startColor[0]) * rangeProgress;
+          const g = startColor[1] + (endColor[1] - startColor[1]) * rangeProgress;
+          const b = startColor[2] + (endColor[2] - startColor[2]) * rangeProgress;
+
+          el.style.color = `rgb(${r}, ${g}, ${b})`;
+        } else if (scrollPercent < start) {
+          el.style.color = `rgb(92, 110, 125)`;
+        } else {
+          el.style.color = `rgb(255, 237, 76)`;
+        }
+      });
+    });
+  }
+
+ColorChange();
+
+
+});
+
 })()
