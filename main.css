@@ -555,7 +555,6 @@ padding: 24px 0;
     display: flex;
     justify-content: space-between;
     padding: 0 16px;
-    /* z-index: 2; */
   } 
 
   .header{
@@ -572,34 +571,50 @@ padding: 24px 0;
     z-index: 1;
   }
 
-  .burger_but{
-    background-image: url(8947c2d639ada5a35a8d.svg);
-    background-color: transparent;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 30px;
-    border: none;
-    height: 22px;
-    width: 22px;
+  .burger_but {
+    width: 30px;
+    height: 18px;
+    position: relative;
     cursor: pointer;
-    z-index: 1;
+    display: flex;
   }
 
-  .but_close{
-    background-image: url(cd13f40ccd7e0138a7de.svg);
-    background-color: transparent;
-    border: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 22px;
-    width: 22px;
+  .burger_but span,
+  .burger_but span::before,
+  .burger_but span::after {
+    align-self: center;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
     z-index: 1;
-    cursor: pointer;
+  }
+  .burger_but span::before {
+    top: -8px; 
+  }
+  .burger_but span::after {
+    top: 8px; 
   }
 
 
-  .m_header_popup_menu{
-    visibility: hidden;
+
+  .burger_but.clicked span {
+    background: transparent;
+  }
+
+  .burger_but.clicked span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .burger_but.clicked span::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .m_header_popup_menu{    
     display: flex;
     flex-direction: column;
     background-color: #1A1F24;
@@ -609,14 +624,16 @@ padding: 24px 0;
     width: 100%;
     height: 100vh;
     padding: 84px 16px;
+    animation: close_right-down 300ms linear forwards;
   }
 
   .popup_open{
     visibility: visible;
-
+    border-radius: 0%;
+    animation: open_right-down 300ms ease-in-out;
   }
 
-.m_header_popup_menu ul{
+  .m_header_popup_menu ul{
     list-style: none;
   }
 
@@ -648,6 +665,38 @@ padding: 24px 0;
   .popup_social_icon:first-child{
     padding-right: 12px ;
   }
+
+
+
+  @keyframes open_right-down {
+    0%{
+      transform: translateY(-150vh) translateX(100vw) ;
+      border-radius: 50%;    
+    }
+    50%{
+      border-radius: 50%;  
+    }
+    100%{
+      transform: translateY(0) translateX(0) ;
+      border-radius: 0;      
+      visibility: visible;
+    }    
+  }
+  
+  @keyframes close_right-down {
+    0%{
+      transform: translateY(0) translateX(0) ;
+      border-radius: 0;
+    }
+    50%{
+      border-radius: 50%;  
+    }
+    100%{   
+      transform: translateY(-150vh) translateX(100vw) ;
+      border-radius: 50%;  
+      visibility: hidden;   
+    }    
+  }
 }
 
 
@@ -664,11 +713,8 @@ padding: 24px 0;
     padding-left: 16px;
     padding-top: 288px;
     background-size: cover;
-  }
-  
-  .hero_page{
-    height: 750px;
-    max-height: 100vh;
+    height: 100%;
+    /* проверить размер картинки и его размещение. на телефоне картинка вылазиет полностью не маштабируясь */
   }
 
  .hero_page_slogan{
@@ -702,7 +748,6 @@ padding: 24px 0;
     font-weight: 300;
     font-size: 18px;
   }
-
 }
 /*!*********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/m_about.css ***!
@@ -825,10 +870,13 @@ padding: 24px 0;
     font-size: 80px;
     font-weight: 600;
     padding-right: 24px;
+    transition: color 50ms linear;
   }
+
   .m_mission_text_list li:nth-child(2) .num{
     padding-left: 24px;
   }
+
   .text{
     height: 58px;
   }
