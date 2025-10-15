@@ -713,7 +713,7 @@ padding: 24px 0;
     padding-left: 16px;
     padding-top: 288px;
     background-size: cover;
-    height: 100%;
+    /*height: 100%;*/
     /* проверить размер картинки и его размещение. на телефоне картинка вылазиет полностью не маштабируясь */
   }
 
