@@ -714,7 +714,6 @@ padding: 24px 0;
     padding-top: 288px;
     background-size: cover;
     /*height: 100%;*/
-    /* проверить размер картинки и его размещение. на телефоне картинка вылазиет полностью не маштабируясь */
   }
 
  .hero_page_slogan{
