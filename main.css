@@ -713,7 +713,10 @@ padding: 24px 0;
     padding-left: 16px;
     padding-top: 288px;
     background-size: cover;
-    height: 100vh;
+  }
+
+  .hero_page{
+    justify-content: end;
   }
 
  .hero_page_slogan{
@@ -740,6 +743,7 @@ padding: 24px 0;
 
   .hero_marquee_box{
     height: 56px;
+    bottom: unset;
   }
   .hero_page_run_text{
     word-spacing: 8px;
