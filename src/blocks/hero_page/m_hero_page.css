@@ -7,8 +7,10 @@
     padding-left: 16px;
     padding-top: 288px;
     background-size: cover;
-    height: 100%;
-    /* проверить размер картинки и его размещение. на телефоне картинка вылазиет полностью не маштабируясь */
+  }
+
+  .hero_page{
+    justify-content: end;
   }
 
  .hero_page_slogan{
@@ -35,6 +37,7 @@
 
   .hero_marquee_box{
     height: 56px;
+    bottom: unset;
   }
   .hero_page_run_text{
     word-spacing: 8px;

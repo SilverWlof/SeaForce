@@ -42,6 +42,7 @@
 
 .contacts_text_list:first-child{
   font-weight: bold;
+  letter-spacing: 3%;
 }
 
 .contacts_text_list:nth-child(2){

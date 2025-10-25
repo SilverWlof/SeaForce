@@ -1,7 +1,6 @@
 .footer{
   display: flex;
   flex-direction: column;
-  height: 375px;
   background:linear-gradient(to top,#323C45,#262A2D);
   color: white;
   font-size: 18px; 
@@ -11,10 +10,11 @@
   display: flex;
   flex-direction: row;
   padding: 64px 8%;
+  height: 312px;
+  box-sizing: border-box;
 }
 
 .footer_social{
-  height: 184px;
   width: 32%;
   padding-right: 2%;
 }
@@ -27,10 +27,16 @@
 .footer_social_contacts{
   padding-bottom: 16px;
 }
-.footer_social_contacts p:first-child {
+.footer_social_contacts a{
+  color: white;
   padding-bottom: 15px;
   text-decoration: underline;
 }
+
+.footer_social_contacts p{
+  padding-top: 15px;
+}
+
 
 .footer_social_icon{
   padding-right: 16px;
@@ -45,7 +51,7 @@
 .footer_adress{
   list-style: none;
   width: 32%;
-  height: 210px;
+  height: 184px;
   padding-right: 2%;
 }
 
