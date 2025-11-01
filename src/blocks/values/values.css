@@ -10,8 +10,9 @@
 .values_text_box{
   color: white;
   width: 588px;
-  height: 235px;
-  padding-left: 50%;
+  height: 236px;
+  padding-left: 51%;
+  line-height: 30px;
 }
 
 .values_text{

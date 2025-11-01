@@ -7,18 +7,18 @@
   color: white;
   background: linear-gradient(to top, #191f24 , #14171a);
   height: 643px;  
-  padding: 0 8%;
+  padding: 0 120px;
 }
 
 .mission_box{
-  padding-top: 8.8%;
-  padding-bottom: 128px;
+  padding-top: 98px;
   width: 100%;
 }
 
 .mission_head_text{
+  letter-spacing: 3%;
   font-size: 28px;
-  padding-bottom: 16px;
+  padding-bottom: 13px;
 }
 
 .mission_head_text:first-child{
@@ -27,14 +27,17 @@
 }
 
 .mission_text{
-  font-size: 24px;
+  font-size: 27px;
+  letter-spacing: 5%;
+  width: 1080px;
+  line-height: 40px;
 }
 
 .mission_text_list{
   display: flex;
   flex-direction: row;
   justify-content: space-between;  
-  margin-left: 24px;
+  margin-left: 36px;
 }
 
 .mission_line{

@@ -17,6 +17,7 @@
 .footer_social{
   width: 32%;
   padding-right: 2%;
+  line-height: 18px;
 }
 .footer_social_logo{
   height: 21px;
@@ -25,21 +26,21 @@
 }
 
 .footer_social_contacts{
-  padding-bottom: 16px;
+  padding-bottom: 22px;
 }
 .footer_social_contacts a{
   color: white;
-  padding-bottom: 15px;
   text-decoration: underline;
 }
 
 .footer_social_contacts p{
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 
 .footer_social_icon{
-  padding-right: 16px;
+  padding-right: 9px;
+  padding-left: 4px;
   height: 36px;
   width: 36px;
   text-decoration: none;
@@ -53,6 +54,7 @@
   width: 32%;
   height: 184px;
   padding-right: 2%;
+  line-height: 24px;
 }
 
 .footer_adress p{
@@ -67,6 +69,7 @@
   width: 115px;
   list-style: none;
   width: 32%;
+  line-height: 22px;
 }
 .footer_nav li:first-child{
   padding-bottom: 18px;

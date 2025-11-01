@@ -1,0 +1,1221 @@
+/*!**********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/fonts.css ***!
+  \**********************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/normalize.css ***!
+  \**************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/fonts.css (1) ***!
+  \**************************************************************************************************************************************************/
+ 
+
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/scroll.css ***!
+  \***********************************************************************************************************************************************/
+  @media screen and (max-width: 430px ){
+  .scroll-wrapper{
+    /* display: inherit; */
+
+  }
+
+  .scroll-content{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+  }
+
+  .scroll-content *{
+    flex: 0 0 auto;
+  }
+
+  .m_values .custom-scrollbar {
+    margin-top: 356px;  
+  }
+
+  .custom-scrollbar {
+    position: absolute;
+    left: 0;
+    height: 8px;
+    background: #5C6E7D;
+    width: 100vw;
+    margin-top: 52px;
+  }
+
+
+
+  .custom-thumb {
+    position: absolute;
+    height: 8px;
+    background: #ffed4c;
+  }
+}
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/page/page.css ***!
+  \**************************************************************************************************************************************************/
+.page{
+    font-family: "Inter", "Arial", sans-serif;
+    font-size: 24px;
+}
+
+.text_animation{
+    /* opacity: 0; */
+}
+
+.text_animation_start{
+  animation: transpend_text 1s;
+}
+
+@keyframes transpend_text{
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 430px ){
+  .page{
+    font-size: 14px;
+  }
+}
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/hero_page/hero_page.css ***!
+  \************************************************************************************************************************************************************/
+.hero_page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.hero_page_image {
+  background-image: url(8bea4726ed950bd0a142.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-left: 120px;
+  background-position: center;
+  padding-top: 193px;
+}
+
+.hero_page_slogan{
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+  height: 249px;
+  width: 519px;
+  padding-bottom: 32px;
+  letter-spacing: 3%;
+  line-height: 82px;
+}
+
+.hero_page_run_text{
+  font-style: italic;
+  color: #1A1F24;
+  text-transform: uppercase;
+  word-spacing: 48px;
+  letter-spacing: 3%;
+  font-weight: 300;
+  font-size: 32px;
+  white-space: nowrap;
+  display: flex;
+}
+
+.hero_marquee_box{
+  background-color: #FFED4C;  
+  height: 96px;
+  align-content: center;
+}
+
+.hero_page_but{
+  height:66px ;
+  width: 180px;
+  border-radius: 4px;
+  color: #1A1F24;
+  background-color: #FFF8CF;
+  font-size: 18px;
+}
+
+.hero_page_but_catolog{
+  background-color: #FFED4C;
+  font-weight: bold;
+  margin-right: 24px;
+}
+.hero_page_but_catolog img{
+ padding-left: 8px;
+ height: 16px;
+ width: 16px;
+}
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/about.css ***!
+  \*******************************************************************************************************************************************************/
+.about{
+  background-image: url(797c4216f4718b00846c.jpg);
+  height: 832px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 128px 120px 0 120px;
+  background-color: #1A1F24;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.about_text{
+  color: white;
+  font-size: 28px;
+}
+
+.about_text:nth-child(2){
+  padding-bottom: 384px;
+}
+
+.about_text_head{
+  font-size: 64px;
+  padding-bottom: 32px;
+}
+
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/mission.css ***!
+  \*********************************************************************************************************************************************************/
+.m_mission_box{
+  display: none;
+}
+
+.mission{
+  display: flex;
+  color: white;
+  background: linear-gradient(to top, #191f24 , #14171a);
+  height: 643px;  
+  padding: 0 120px;
+}
+
+.mission_box{
+  padding-top: 98px;
+  width: 100%;
+}
+
+.mission_head_text{
+  letter-spacing: 3%;
+  font-size: 28px;
+  padding-bottom: 13px;
+}
+
+.mission_head_text:first-child{
+   color: #FFED4C;
+   font-size: 40px;
+}
+
+.mission_text{
+  font-size: 27px;
+  letter-spacing: 5%;
+  width: 1080px;
+  line-height: 40px;
+}
+
+.mission_text_list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  margin-left: 36px;
+}
+
+.mission_line{
+  margin: 60px 0;
+  background-color: white;
+  color: white;
+  height: 1px;
+  border: none;
+}
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/values/values.css ***!
+  \******************************************************************************************************************************************************/
+.values{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 927px;
+  background-image: url(d924fd52d834c05ef1eb.jpg);background-repeat: no-repeat;
+  background-size: cover;
+  gap: 32px;
+}
+.values_text_box{
+  color: white;
+  width: 588px;
+  height: 236px;
+  padding-left: 51%;
+  line-height: 30px;
+}
+
+.values_text{
+font-size: 24px ;
+margin-left: 24px;
+}
+
+.values_text_head{
+  font-size: 28px;
+  padding-bottom: 12px;
+  list-style: none;
+  font-weight: bold;
+}
+.m_values_map{
+  display: none;
+}
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/usp/usp.css ***!
+  \************************************************************************************************************************************************/
+.usp{
+    background-color: #191f24;
+    height: 1200px;
+    padding-top: 80px;
+}
+
+.usp_box{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-image: url(8c7c4c112f611d49775c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 0 8%;
+
+
+}
+
+.usp_text{
+  height: 156px;
+  color: white;
+  font-size: 40px;
+  padding-bottom: 128px;
+}
+.m_usp_map{
+  display: none;
+}
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/contacts/contacts.css ***!
+  \**********************************************************************************************************************************************************/
+.contacts{
+  height: 736px;
+  background-image: url(4b6884cfe6202ecebc9e.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background-color: #191F24;
+}
+
+.contacts_box{
+  display: flex;
+  flex-direction: row;
+  padding-top: 32px;
+  gap: 78px;
+}
+
+.contacts_box ul{
+  width: 360px;
+}
+
+.contacts_text{
+  color: white;
+  padding-top: 76px;
+  font-size: 40px;
+  font-weight: bold;
+  width: 48%;
+  padding-right: 95px;
+  letter-spacing: 3%;
+}
+
+.contacts_text_list{
+  font-size: 24px;
+  list-style: none;
+  font-weight: normal;
+}
+
+.contacts_text_list a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.contacts_text_list:first-child{
+  font-weight: bold;
+  letter-spacing: 3%;
+}
+
+.contacts_text_list:nth-child(2){
+  padding: 24px 0;
+}
+.contacts_text_list:nth-child(3){
+  font-weight: bold;
+}
+
+.contacts_text_list_zvonok {
+  text-decoration: underline;
+  color: #ffed4c;
+}
+
+.contacts_map{
+  width:58% ;
+  height: 530px;
+  background-color: grey;
+  margin-top: 62px;
+  padding: 0;
+}
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/footer/footer.css ***!
+  \******************************************************************************************************************************************************/
+.footer{
+  display: flex;
+  flex-direction: column;
+  background:linear-gradient(to top,#323C45,#262A2D);
+  color: white;
+  font-size: 18px; 
+}
+
+.footer_box{
+  display: flex;
+  flex-direction: row;
+  padding: 64px 8%;
+  height: 312px;
+  box-sizing: border-box;
+}
+
+.footer_social{
+  width: 32%;
+  padding-right: 2%;
+  line-height: 18px;
+}
+.footer_social_logo{
+  height: 21px;
+  width: 180px;
+  padding-bottom: 16px;
+}
+
+.footer_social_contacts{
+  padding-bottom: 22px;
+}
+.footer_social_contacts a{
+  color: white;
+  text-decoration: underline;
+}
+
+.footer_social_contacts p{
+  padding-top: 16px;
+}
+
+
+.footer_social_icon{
+  padding-right: 9px;
+  padding-left: 4px;
+  height: 36px;
+  width: 36px;
+  text-decoration: none;
+}
+.footer_social_icon:first-child{
+  padding-right: 16px;
+}
+
+.footer_adress{
+  list-style: none;
+  width: 32%;
+  height: 184px;
+  padding-right: 2%;
+  line-height: 24px;
+}
+
+.footer_adress p{
+  padding-bottom: 14px;
+}
+
+.footer_adress p:nth-child(5){
+  padding-bottom: 18px;
+}
+
+.footer_nav{
+  width: 115px;
+  list-style: none;
+  width: 32%;
+  line-height: 22px;
+}
+.footer_nav li:first-child{
+  padding-bottom: 18px;
+  font-weight:bold ;
+  text-transform: uppercase;
+}
+.footer_nav a{
+ list-style: none;
+ text-decoration: none;
+ color: white;
+}
+
+.credit{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8%;
+  align-items: center;
+  height: 42px;
+  background-color: #1A1F24;
+  font-size: 12px;
+  opacity: 65%;
+  color: white;
+  text-decoration: none;
+}
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/header/header.css ***!
+  \******************************************************************************************************************************************************/
+.m_header{
+  display: none;
+}
+.header{
+  height: 96px;
+  align-content: center;
+  position: fixed;
+  color: white;
+  width: 100%;
+  z-index: 1;
+}
+.desctop_header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8%;
+  font-size: 28px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.header_background{
+    background-color: #181d22;
+}
+.header_background_transparent{
+    background-color: transparent;
+}
+
+
+.header_logo{
+  background: url(5aba779b561338823df3.svg) no-repeat center;
+  background-size: cover;
+  height: 22px;
+  width: 205px;
+}
+
+.menu{
+  font-size: 25px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.menu a{
+  padding-left: 24px;
+  letter-spacing: unset;
+}
+.menu:last-child{
+  padding-right: 10px;
+}
+
+.link{
+  letter-spacing: 6%;
+  color: white;
+  text-decoration: none;
+}
+
+.active{
+  font-weight: bold;
+  text-decoration: underline #FFED4C 3px; 
+  text-underline-offset: 10px;
+}
+
+
+@keyframes link_underline{
+  to{text-decoration: underline #FFED4C 3px; }
+}
+
+
+
+
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/hero_page/marquee.css ***!
+  \**********************************************************************************************************************************************************/
+.marquee_conteiner {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+
+.marquee_wrapper{
+  display: flex;
+  width: max-content;
+  animation: move 10s linear infinite;
+}
+
+.marquee_text {
+  white-space: nowrap;
+}
+
+@keyframes move{
+  0%{transform: translateX(0%);}
+  100%{transform: translateX(-20%);}
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/header/m_header.css ***!
+  \********************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+
+  .desctop_header{
+    display: none;
+  }
+
+  .m_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  } 
+
+  .header{
+    height: 56px;
+    align-content: center;    
+    position: fixed;
+    color: white;
+    width: 100%; 
+  }
+
+  .header_logo{
+    height: 17px;
+    width: 137px;
+    z-index: 1;
+    background-size: auto;
+  }
+
+  .burger_but {
+    width: 24px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .burger_but span,
+  .burger_but span::before,
+  .burger_but span::after {
+    align-self: center;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+  .burger_but span::before {
+    top: -10px; 
+  }
+  .burger_but span::after {
+    top: 10px;  
+  }
+
+  .burger_but.clicked span {
+    background: transparent;
+  }
+
+  .burger_but.clicked span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .burger_but.clicked span::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .m_header_popup_menu{    
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1F24;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 84px 16px;
+    animation: close_right-down 300ms linear forwards;
+  }
+
+  .popup_open{
+    visibility: visible;
+    border-radius: 0%;
+    animation: open_right-down 300ms ease-in-out;
+  }
+
+  .m_header_popup_menu ul{
+    list-style: none;   
+  }
+
+  .popup_menu{
+    display: flex;
+    flex-direction:column;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    padding-bottom: 48px;
+    font-size: 38px;
+    font-weight: bold;
+  }
+
+  .popup_menu .link:hover, 
+  .popup_menu .link:active{
+    text-decoration: underline #FFED4C 15%; 
+    text-underline-offset: 38%;
+    font-weight: 300;
+  }
+
+  .popup_tel{
+    color: #FFED4C;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .popup_contact{
+    font-size: 22px;
+    font-weight: normal;
+    padding: 16px 0;
+  }
+
+  .popup_social_icon{
+    width: 36px;
+    height: 36px;
+  }
+  .popup_social_icon:first-child{
+    padding-right: 12px ;
+  }
+
+
+
+  @keyframes open_right-down {
+    0%{
+      transform: translateY(-150vh) translateX(100vw) ;
+      border-radius: 50%;    
+    }
+    50%{
+      border-radius: 50%;  
+    }
+    100%{
+      transform: translateY(0) translateX(0) ;
+      border-radius: 0;      
+      visibility: visible;
+    }    
+  }
+  
+  @keyframes close_right-down {
+    0%{
+      transform: translateY(0) translateX(0) ;
+      border-radius: 0;
+    }
+    50%{
+      border-radius: 50%;  
+    }
+    100%{   
+      transform: translateY(-150vh) translateX(100vw) ;
+      border-radius: 50%;  
+      visibility: hidden;   
+    }    
+  }
+}
+
+
+
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/hero_page/m_hero_page.css ***!
+  \**************************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+
+  .hero_page_image {
+    background-image: url(078f7f190c7077f7ba70.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 16px;
+    padding-top: 288px;
+    background-size: cover;
+  }
+
+  .hero_page{
+    justify-content: end;
+  }
+
+ .hero_page_slogan{
+    font-size: 38px;
+    height: 159px;
+    width: 343px;
+    padding-bottom: 24px;
+    line-height: 52px;
+  }
+
+  .hero_page_but{
+    height:44px ;
+    width: 138px;
+    font-size: 14px;
+  }
+  .hero_page_but_catolog{
+    margin-right: 8px;
+  }
+
+  .hero_page_but_catolog img{
+  padding-left: 4px;
+  height: 8px;
+  width: 8px;
+  }
+
+  .hero_marquee_box{
+    height: 56px;
+    bottom: unset;
+  }
+  .hero_page_run_text{
+    word-spacing: 8px;
+    letter-spacing: 4%;
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/m_about.css ***!
+  \*********************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+  .about{
+    background-image: url(56f89d6256ad71ea6c62.jpg);
+    background-size:cover;
+    background-color: #1A1F24;
+    padding: 80px 16px 59px;
+    height: 667px;
+    box-sizing: border-box;
+  }
+
+  .about_text{
+    color: white;
+    font-size: 16px;
+  }
+
+  .about_text:nth-child(2){
+    height: 63px;
+    padding-bottom: 336px;
+  }
+
+  .about_text_head{
+    font-size: 22px;
+    padding-bottom: 16px;
+  }
+}
+/*!***********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/about_us/m_mission.css ***!
+  \***********************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+
+  .m_mission_box{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    width: 100vw;
+    max-width:430px;
+  }
+
+  .m_mission{
+    display: none;
+  }
+
+  .mission{
+    height: calc(299px + 368px); 
+    padding: 0;
+  }
+
+  .m_mission_target{
+    height: 300px;
+    background-color: #ffed4c;
+    padding: 64px 16px;
+    box-sizing: border-box;
+    width: 100vw;
+    max-width:430px;
+  }
+
+  .m_mission_head_text:first-child{
+    color: #1A1F24;
+    font-size: 22px;
+    padding-bottom: 4px;
+  }
+
+  .m_mission_text{
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .m_mission_help{
+    display: block;
+    height: 368px;
+    color: white;
+    padding: 60px 16px;
+    background: linear-gradient(to bottom, #1A1F24, #141719);
+    overflow-x: auto;
+    box-sizing: border-box;
+  }
+
+  .m_mission_head_text{
+    font-size: 38px;
+    font-weight: bold;
+    padding-bottom: 34px;
+    position: sticky;
+    left: 0;
+    line-height: 50px;
+    letter-spacing: 2%;
+  }
+
+  .m_mission_map{
+    font-size: 14px;
+    padding-bottom: 38px;
+    position: sticky;
+    left: 0;
+    align-items: center;
+  }
+  .m_mission_text_list{
+    display: flex;
+    list-style: none;
+    scroll-behavior: smooth;
+    height: 58px;
+  }
+  .m_mission_help::-webkit-scrollbar{
+    display: none;
+  }
+  .m_mission_text_list li{
+    flex-shrink: 0;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+  }  
+  
+  .head{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .num{
+    color: #ffed4c;
+    font-size: 80px;
+    font-weight: 600;
+    padding-right: 20px;
+    transition: color 50ms linear;
+  }
+
+  .num:first-child{
+    padding-left: 8px;
+  }
+
+  .m_mission_text_list li:nth-child(2) .num{
+    padding-left: 24px;
+  }
+
+  .text{
+    height: 58px;
+    letter-spacing: 3%;
+  }
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/values/m_values.css ***!
+  \********************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+  .m_values_map{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    left: 16px;
+    padding-top: 60px;
+    height: 20px;
+    align-items: center;
+  }
+
+  .m_values_map img{
+    height: 10px;
+    width: 10px;
+  }
+
+  .m_values{
+    height: 364px;
+    width: 100vw;
+    max-width:430px;
+    overflow-x: auto;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 16px;
+    gap: 24px;
+    box-sizing: border-box;
+    background-image: url(a7af9f1545820b06a533.jpg);
+    background-size: cover;
+  }
+
+ .m_values_text_box{
+    color: white;
+    width: 343px;
+    height: 192px;
+    padding-left: unset;
+    left: 0;
+    flex-shrink: 0;
+    padding-top: 112px;
+  }
+
+  .values_text{
+    font-size: 16px ;
+    line-height: 21px;
+  }
+
+  .values_text_head{
+    color: #FFED4C;
+    font-size: 22px;
+    padding-bottom: 14px;
+  }
+}
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/usp/m_usp.css ***!
+  \**************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+  .usp{
+      background-color: #191f24;
+      height: 667px;
+      padding-top: unset;
+  }
+
+  .usp_box{
+    display: flex;
+    justify-content: unset;
+    align-items: end;
+    background-image: url(ace9f691c8e601cf037e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 0 16px;
+  }
+
+  .usp_text{
+    height: 84px;
+    width: 100vw;
+    max-width:430px;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 66px;
+  }
+  .m_usp_map{
+    display: flex;
+    color: white;
+    position: absolute;
+    left: 16px;
+    padding-top: 62px;
+  }
+}
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/contacts/m_contacts.css ***!
+  \************************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+  .contacts{
+    height: unset;
+    width: 100vw;
+    max-width:430px;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    background-color: #191F24;
+  }
+
+  .contacts_box{
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    gap: 8px;
+  }
+
+  .contacts_box ul{
+    width: 167px;
+    height: 104px;
+  }
+
+  .contacts_text{
+    color: white;
+    padding: 64px 16px;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    padding-right: unset;
+    height: 274px;
+    box-sizing: border-box;
+  }
+
+  .contacts_text_list{
+    font-size: 14px;
+    list-style: none;
+    font-weight: normal;
+  }
+
+  .contacts_text_list a{
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .contacts_text_list:first-child{
+    font-weight: bold;
+    padding-bottom: 16px;
+  }
+
+  .contacts_text_list:nth-child(2){
+  padding: 8px 0;
+  }
+  .contacts_text_list:nth-child(3){
+    font-weight: bold;
+  }
+
+  .contacts_text_list_zvonok {
+    color: #ffed4c;
+    text-decoration: none;
+  }
+
+  .contacts_map{
+    width:100%;
+    height: 320px;
+    background-color: grey;
+    margin-top: unset;
+    padding: 0;
+  }
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/footer/m_footer.css ***!
+  \********************************************************************************************************************************************************/
+@media screen and (max-width: 430px ){
+  .footer{
+    display: flex;
+    flex-direction: colrumn;
+    height: unset;
+    background:linear-gradient(to top,#323C45,#262A2D);
+    color: white;
+    font-size: 14px; 
+  }
+
+  .footer_box{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 16px 28px;
+    height: 100%;
+  }
+
+  .footer_social{
+    height: unset;
+    width: unset;
+    padding-right: unset;
+    padding-bottom: 18px;
+  }
+  .footer_social_logo{
+    height: 16px;
+    width: unset;
+    padding-bottom: 16px;
+  }
+
+  .footer_social_contacts{
+    padding-bottom: 16px;    
+  }
+
+  .footer_social_contacts a{
+    color: #ffed4c;
+    text-decoration: none;
+    letter-spacing: 3%;
+  }
+
+  .footer_social_contacts p{
+    padding-top: 8px;
+  }
+
+  .footer_social_contacts p:first-child {
+    padding-bottom: 15px;
+    text-decoration: underline;
+  }
+
+  .footer_social_icon{
+    padding-right: 4px;
+    padding-left: 0;
+    height: 22px;
+    width: 22px;
+    text-decoration: none;
+  }
+  .footer_social_icon img{
+    height: 22px;
+    width: 22px;
+  }
+
+  .footer_social_icon:first-child{
+    padding-right: unset;
+  }
+
+  .footer_adress{
+    list-style: none;
+    width:unset;
+    height: unset;
+    padding-right: unset;
+  }
+
+  .footer_adress p{
+    padding-bottom: 0;
+    line-height: 23px;
+  }
+
+  .footer_adress p:first-child{
+    padding-bottom: 4px;
+  }
+
+  .footer_adress p:nth-child(5){
+    padding-bottom: 18px;
+  }
+
+  .footer_nav{
+    padding-top: 18px;
+    width: unset;
+    list-style: none;
+    width: 32%;
+    line-height: 19px;
+  }
+  .footer_nav li:first-child{
+    padding-bottom: 8px;
+    font-weight:bold ;
+    text-transform: uppercase;
+  }
+  .footer_nav a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  }
+
+  .credit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 16px;
+    align-items: unset;
+    background-color: #1A1F24;
+    font-size: 10px;
+    opacity: 65%;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+}
+/*!*********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/pages/index.css ***!
+  \*********************************************************************************************************************************************/
+

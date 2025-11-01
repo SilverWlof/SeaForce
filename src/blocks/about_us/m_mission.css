@@ -18,9 +18,9 @@
   }
 
   .m_mission_target{
-    height: 299px;
+    height: 300px;
     background-color: #ffed4c;
-    padding: 74px 16px;
+    padding: 64px 16px;
     box-sizing: border-box;
     width: 100vw;
     max-width:430px;
@@ -29,7 +29,7 @@
   .m_mission_head_text:first-child{
     color: #1A1F24;
     font-size: 22px;
-    padding-bottom: 16px;
+    padding-bottom: 4px;
   }
 
   .m_mission_text{
@@ -44,19 +44,22 @@
     padding: 60px 16px;
     background: linear-gradient(to bottom, #1A1F24, #141719);
     overflow-x: auto;
+    box-sizing: border-box;
   }
 
   .m_mission_head_text{
     font-size: 38px;
     font-weight: bold;
-    padding-bottom: 32px;
+    padding-bottom: 34px;
     position: sticky;
     left: 0;
+    line-height: 50px;
+    letter-spacing: 2%;
   }
 
   .m_mission_map{
     font-size: 14px;
-    padding-bottom: 32px;
+    padding-bottom: 38px;
     position: sticky;
     left: 0;
     align-items: center;
@@ -87,8 +90,12 @@
     color: #ffed4c;
     font-size: 80px;
     font-weight: 600;
-    padding-right: 24px;
+    padding-right: 20px;
     transition: color 50ms linear;
+  }
+
+  .num:first-child{
+    padding-left: 8px;
   }
 
   .m_mission_text_list li:nth-child(2) .num{
@@ -97,5 +104,6 @@
 
   .text{
     height: 58px;
+    letter-spacing: 3%;
   }
 }

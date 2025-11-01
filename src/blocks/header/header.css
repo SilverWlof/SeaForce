@@ -28,28 +28,35 @@
 
 .header_logo{
   background: url(/src/images/SEAFORCE.svg) no-repeat center;
+  background-size: cover;
   height: 22px;
-  width: 190px;
+  width: 205px;
 }
 
 .menu{
-  font-size: 24px;
+  font-size: 25px;
   font-weight: normal;
   text-decoration: none;
 }
 
 .menu a{
   padding-left: 24px;
+  letter-spacing: unset;
+}
+.menu:last-child{
+  padding-right: 10px;
 }
 
 .link{
+  letter-spacing: 6%;
   color: white;
   text-decoration: none;
 }
 
-.link.active{
+.active{
   font-weight: bold;
   text-decoration: underline #FFED4C 3px; 
+  text-underline-offset: 10px;
 }
 
 

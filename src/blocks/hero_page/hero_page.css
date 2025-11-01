@@ -9,9 +9,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  padding-left: 8%;
+  padding-left: 120px;
   background-position: center;
-  padding-top: 13.34%;
+  padding-top: 193px;
 }
 
 .hero_page_slogan{
@@ -20,7 +20,9 @@
   color: white;
   height: 249px;
   width: 519px;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
+  letter-spacing: 3%;
+  line-height: 82px;
 }
 
 .hero_page_run_text{

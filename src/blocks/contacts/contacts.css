@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
   padding-top: 32px;
-  gap: 24px;
+  gap: 78px;
 }
 
 .contacts_box ul{
@@ -22,11 +22,12 @@
 
 .contacts_text{
   color: white;
-  padding-top: 64px;
+  padding-top: 76px;
   font-size: 40px;
   font-weight: bold;
   width: 48%;
-  padding-right: 6.7%;
+  padding-right: 95px;
+  letter-spacing: 3%;
 }
 
 .contacts_text_list{
@@ -46,7 +47,7 @@
 }
 
 .contacts_text_list:nth-child(2){
-padding: 24px 0;
+  padding: 24px 0;
 }
 .contacts_text_list:nth-child(3){
   font-weight: bold;
@@ -61,6 +62,6 @@ padding: 24px 0;
   width:58% ;
   height: 530px;
   background-color: grey;
-  margin-top: 52px;
+  margin-top: 62px;
   padding: 0;
 }

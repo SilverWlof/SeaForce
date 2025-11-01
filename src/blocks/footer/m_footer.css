@@ -11,14 +11,15 @@
   .footer_box{
     display: flex;
     flex-direction: column;
-    padding: 64px 16px 30px;
+    padding: 60px 16px 28px;
+    height: 100%;
   }
 
   .footer_social{
     height: unset;
     width: unset;
     padding-right: unset;
-    padding-bottom: 24px;
+    padding-bottom: 18px;
   }
   .footer_social_logo{
     height: 16px;
@@ -27,15 +28,27 @@
   }
 
   .footer_social_contacts{
-    padding-bottom: 16px;
+    padding-bottom: 16px;    
   }
+
+  .footer_social_contacts a{
+    color: #ffed4c;
+    text-decoration: none;
+    letter-spacing: 3%;
+  }
+
+  .footer_social_contacts p{
+    padding-top: 8px;
+  }
+
   .footer_social_contacts p:first-child {
     padding-bottom: 15px;
     text-decoration: underline;
   }
 
   .footer_social_icon{
-    padding-right: 8px;
+    padding-right: 4px;
+    padding-left: 0;
     height: 22px;
     width: 22px;
     text-decoration: none;
@@ -57,7 +70,12 @@
   }
 
   .footer_adress p{
-    padding-bottom: 8px;
+    padding-bottom: 0;
+    line-height: 23px;
+  }
+
+  .footer_adress p:first-child{
+    padding-bottom: 4px;
   }
 
   .footer_adress p:nth-child(5){
@@ -65,10 +83,11 @@
   }
 
   .footer_nav{
-    padding-top: 24px;
+    padding-top: 18px;
     width: unset;
     list-style: none;
     width: 32%;
+    line-height: 19px;
   }
   .footer_nav li:first-child{
     padding-bottom: 8px;
